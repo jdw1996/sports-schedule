@@ -1,0 +1,2 @@
+body{width:500px;margin:0 auto;font-family:serif;text-align:center}.grid-container{width:500px;display:grid;grid-row-gap:1px;grid-column-gap:3px;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,auto)}.day{width:100%;border:1px solid #000;font-family:monospace;text-align:center}
+/*# sourceMappingURL=main.4e41d35f.chunk.css.map */

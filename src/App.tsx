@@ -27,12 +27,22 @@ function numDaysInMonth(month: number, year: number): number {
   return new Date(year, month + 1, 0).getDate();
 }
 
-type CalendarDayProps = {
+type Day = {
   date: number;
+  week: number;
+  dayOfWeek: number;
+};
+
+type CalendarDayProps = {
+  day: Day;
 };
 
 function CalendarDay(props: CalendarDayProps): JSX.Element {
-  return <td>{props.date}</td>;
+  return (
+    <div>
+      date {props.day.date}, dayOfWeek {props.day.dayOfWeek}, week {props.day.week}
+    </div>
+  );
 }
 
 function App(): JSX.Element {
@@ -40,13 +50,26 @@ function App(): JSX.Element {
 
   const [month, setMonth] = useState(currentDate.getMonth());
   const [year, setYear] = useState(currentDate.getFullYear());
+  const [firstDay, setFirstDay] = useState(currentDate.getDay());
   const [daysInMonth, setDaysInMonth] = useState(numDaysInMonth(month, year));
+
+  const [days, setDays] = useState<Day[]>([
+    ...Array.from({ length: daysInMonth }, (_, i) => ({
+      date: i + 1,
+      dayOfWeek: ((i + firstDay - 1) % 7) + 1,
+      week: Math.floor((i + firstDay - 1) / 7) + 1,
+    })),
+  ]);
 
   return (
     <div className="App">
       <p>The current month is {month}.</p>
       <p>The current year is {year}.</p>
       <p>There are {daysInMonth} days in this month.</p>
+      <p>The first of the month is day {currentDate.getDay()}.</p>
+      {days.map((day: Day) => (
+        <CalendarDay key={day.date} day={day} />
+      ))}
     </div>
   );
 }

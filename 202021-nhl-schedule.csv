@@ -1,0 +1,869 @@
+Visitor,Home,Hour,Minute,Year,Month,Day
+'Pittsburgh Penguins','Philadelphia Flyers',17,30,2021,1,13
+'Montréal Canadiens','Toronto Maple Leafs',19,0,2021,1,13
+'Chicago Blackhawks','Tampa Bay Lightning',20,0,2021,1,13
+'Vancouver Canucks','Edmonton Oilers',22,0,2021,1,13
+'St. Louis Blues','Colorado Avalanche',22,30,2021,1,13
+'Washington Capitals','Buffalo Sabres',19,0,2021,1,14
+'Boston Bruins','New Jersey Devils',19,0,2021,1,14
+'New York Islanders','New York Rangers',19,0,2021,1,14
+'Carolina Hurricanes','Detroit Red Wings',19,30,2021,1,14
+'Columbus Blue Jackets','Nashville Predators',20,0,2021,1,14
+'Calgary Flames','Winnipeg Jets',20,0,2021,1,14
+'Vancouver Canucks','Edmonton Oilers',21,0,2021,1,14
+'San Jose Sharks','Arizona Coyotes',21,0,2021,1,14
+'Anaheim Ducks','Vegas Golden Knights',22,0,2021,1,14
+'Minnesota Wild','Los Angeles Kings',22,0,2021,1,14
+'Dallas Stars','Florida Panthers',19,0,2021,1,14
+'Washington Capitals','Buffalo Sabres',19,0,2021,1,15
+'Pittsburgh Penguins','Philadelphia Flyers',19,0,2021,1,15
+'Chicago Blackhawks','Tampa Bay Lightning',19,0,2021,1,15
+'Toronto Maple Leafs','Ottawa Senators',19,0,2021,1,15
+'St. Louis Blues','Colorado Avalanche',21,0,2021,1,15
+'Dallas Stars','Florida Panthers',19,0,2021,1,15
+'Boston Bruins','New Jersey Devils',13,0,2021,1,16
+'San Jose Sharks','Arizona Coyotes',16,0,2021,1,16
+'New York Islanders','New York Rangers',19,0,2021,1,16
+'Carolina Hurricanes','Detroit Red Wings',19,0,2021,1,16
+'Toronto Maple Leafs','Ottawa Senators',19,0,2021,1,16
+'Montréal Canadiens','Edmonton Oilers',19,0,2021,1,16
+'Columbus Blue Jackets','Nashville Predators',20,0,2021,1,16
+'Minnesota Wild','Los Angeles Kings',21,0,2021,1,16
+'Vancouver Canucks','Calgary Flames',22,0,2021,1,16
+'Anaheim Ducks','Vegas Golden Knights',22,0,2021,1,16
+'Washington Capitals','Pittsburgh Penguins',12,0,2021,1,17
+'Chicago Blackhawks','Florida Panthers',19,0,2021,1,17
+'Dallas Stars','Tampa Bay Lightning',19,0,2021,1,17
+'Columbus Blue Jackets','Detroit Red Wings',12,0,2021,1,18
+'Boston Bruins','New York Islanders',17,0,2021,1,18
+'Winnipeg Jets','Toronto Maple Leafs',19,0,2021,1,18
+'Buffalo Sabres','Philadelphia Flyers',19,30,2021,1,18
+'San Jose Sharks','St. Louis Blues',20,0,2021,1,18
+'Carolina Hurricanes','Nashville Predators',20,0,2021,1,18
+'Vancouver Canucks','Calgary Flames',21,0,2021,1,18
+'Montréal Canadiens','Edmonton Oilers',21,0,2021,1,18
+'Minnesota Wild','Anaheim Ducks',21,0,2021,1,18
+'Arizona Coyotes','Vegas Golden Knights',22,0,2021,1,18
+'New Jersey Devils','New York Rangers',19,0,2021,1,19
+'Buffalo Sabres','Philadelphia Flyers',19,0,2021,1,19
+'Dallas Stars','Tampa Bay Lightning',19,0,2021,1,19
+'Chicago Blackhawks','Florida Panthers',19,0,2021,1,19
+'Washington Capitals','Pittsburgh Penguins',19,0,2021,1,19
+'Winnipeg Jets','Ottawa Senators',19,0,2021,1,19
+'Columbus Blue Jackets','Detroit Red Wings',19,30,2021,1,19
+'Carolina Hurricanes','Nashville Predators',20,0,2021,1,19
+'Colorado Avalanche','Los Angeles Kings',22,0,2021,1,19
+'Edmonton Oilers','Toronto Maple Leafs',19,0,2021,1,20
+'San Jose Sharks','St. Louis Blues',21,0,2021,1,20
+'Minnesota Wild','Anaheim Ducks',21,30,2021,1,20
+'Montréal Canadiens','Vancouver Canucks',22,0,2021,1,20
+'Arizona Coyotes','Vegas Golden Knights',22,0,2021,1,20
+'Philadelphia Flyers','Boston Bruins',19,0,2021,1,21
+'New Jersey Devils','New York Islanders',19,0,2021,1,21
+'Florida Panthers','Carolina Hurricanes',19,0,2021,1,21
+'Tampa Bay Lightning','Columbus Blue Jackets',19,0,2021,1,21
+'Winnipeg Jets','Ottawa Senators',19,0,2021,1,21
+'Montréal Canadiens','Vancouver Canucks',21,30,2021,1,21
+'Colorado Avalanche','Los Angeles Kings',22,0,2021,1,21
+'Buffalo Sabres','Washington Capitals',19,0,2021,1,22
+'New York Rangers','Pittsburgh Penguins',19,0,2021,1,22
+'Edmonton Oilers','Toronto Maple Leafs',19,0,2021,1,22
+'Detroit Red Wings','Chicago Blackhawks',20,0,2021,1,22
+'San Jose Sharks','Minnesota Wild',20,0,2021,1,22
+'Nashville Predators','Dallas Stars',20,30,2021,1,22
+'Vegas Golden Knights','Arizona Coyotes',21,0,2021,1,22
+'Colorado Avalanche','Anaheim Ducks',22,0,2021,1,22
+'Florida Panthers','Carolina Hurricanes',13,0,2021,1,23
+'Philadelphia Flyers','Boston Bruins',19,0,2021,1,23
+'Tampa Bay Lightning','Columbus Blue Jackets',19,0,2021,1,23
+'Montréal Canadiens','Vancouver Canucks',19,0,2021,1,23
+'Los Angeles Kings','St. Louis Blues',20,0,2021,1,23
+'Ottawa Senators','Winnipeg Jets',22,0,2021,1,23
+'Detroit Red Wings','Chicago Blackhawks',12,30,2021,1,24
+'Toronto Maple Leafs','Calgary Flames',16,0,2021,1,24
+'Vegas Golden Knights','Arizona Coyotes',16,0,2021,1,24
+'New York Islanders','New Jersey Devils',19,0,2021,1,24
+'Buffalo Sabres','Washington Capitals',19,0,2021,1,24
+'New York Rangers','Pittsburgh Penguins',19,0,2021,1,24
+'Los Angeles Kings','St. Louis Blues',20,0,2021,1,24
+'San Jose Sharks','Minnesota Wild',20,0,2021,1,24
+'Nashville Predators','Dallas Stars',20,0,2021,1,24
+'Colorado Avalanche','Anaheim Ducks',20,0,2021,1,24
+'Edmonton Oilers','Winnipeg Jets',21,0,2021,1,24
+'Ottawa Senators','Vancouver Canucks',22,0,2021,1,25
+'Pittsburgh Penguins','Boston Bruins',19,0,2021,1,26
+'New York Rangers','Buffalo Sabres',19,0,2021,1,26
+'Philadelphia Flyers','New Jersey Devils',19,0,2021,1,26
+'New York Islanders','Washington Capitals',19,0,2021,1,26
+'Tampa Bay Lightning','Carolina Hurricanes',19,0,2021,1,26
+'Florida Panthers','Columbus Blue Jackets',19,0,2021,1,26
+'Chicago Blackhawks','Nashville Predators',20,0,2021,1,26
+'Edmonton Oilers','Winnipeg Jets',20,0,2021,1,26
+'Los Angeles Kings','Minnesota Wild',20,0,2021,1,26
+'Detroit Red Wings','Dallas Stars',20,30,2021,1,26
+'Toronto Maple Leafs','Calgary Flames',21,0,2021,1,26
+'San Jose Sharks','Colorado Avalanche',21,0,2021,1,26
+'Anaheim Ducks','Arizona Coyotes',21,0,2021,1,26
+'St. Louis Blues','Vegas Golden Knights',21,0,2021,1,26
+'Chicago Blackhawks','Nashville Predators',19,30,2021,1,27
+'Ottawa Senators','Vancouver Canucks',20,0,2021,1,27
+'Pittsburgh Penguins','Boston Bruins',19,0,2021,1,28
+'New York Rangers','Buffalo Sabres',19,0,2021,1,28
+'Philadelphia Flyers','New Jersey Devils',19,0,2021,1,28
+'New York Islanders','Washington Capitals',19,0,2021,1,28
+'Tampa Bay Lightning','Carolina Hurricanes',19,0,2021,1,28
+'Florida Panthers','Columbus Blue Jackets',19,0,2021,1,28
+'Calgary Flames','Montréal Canadiens',19,0,2021,1,28
+'Los Angeles Kings','Minnesota Wild',20,0,2021,1,28
+'Detroit Red Wings','Dallas Stars',20,30,2021,1,28
+'San Jose Sharks','Colorado Avalanche',21,0,2021,1,28
+'Anaheim Ducks','Arizona Coyotes',21,0,2021,1,28
+'St. Louis Blues','Vegas Golden Knights',21,0,2021,1,28
+'Toronto Maple Leafs','Edmonton Oilers',22,0,2021,1,28
+'Ottawa Senators','Vancouver Canucks',22,0,2021,1,28
+'Columbus Blue Jackets','Chicago Blackhawks',20,0,2021,1,29
+'New Jersey Devils','Buffalo Sabres',13,0,2021,1,30
+'Pittsburgh Penguins','New York Rangers',19,0,2021,1,30
+'New York Islanders','Philadelphia Flyers',19,0,2021,1,30
+'Boston Bruins','Washington Capitals',19,0,2021,1,30
+'Dallas Stars','Carolina Hurricanes',19,0,2021,1,30
+'Nashville Predators','Tampa Bay Lightning',19,0,2021,1,30
+'Florida Panthers','Detroit Red Wings',19,0,2021,1,30
+'Calgary Flames','Montréal Canadiens',19,0,2021,1,30
+'Toronto Maple Leafs','Edmonton Oilers',19,0,2021,1,30
+'Colorado Avalanche','Minnesota Wild',20,0,2021,1,30
+'St. Louis Blues','Anaheim Ducks',21,0,2021,1,30
+'Vancouver Canucks','Winnipeg Jets',22,0,2021,1,30
+'New Jersey Devils','Buffalo Sabres',13,0,2021,1,31
+'Dallas Stars','Carolina Hurricanes',17,0,2021,1,31
+'Florida Panthers','Detroit Red Wings',17,0,2021,1,31
+'New York Islanders','Philadelphia Flyers',19,0,2021,1,31
+'Columbus Blue Jackets','Chicago Blackhawks',19,0,2021,1,31
+'Colorado Avalanche','Minnesota Wild',20,0,2021,1,31
+'St. Louis Blues','Anaheim Ducks',20,0,2021,1,31
+'Ottawa Senators','Edmonton Oilers',21,0,2021,1,31
+'Pittsburgh Penguins','New York Rangers',19,0,2021,2,1
+'Boston Bruins','Washington Capitals',19,0,2021,2,1
+'Nashville Predators','Tampa Bay Lightning',19,0,2021,2,1
+'Vancouver Canucks','Montréal Canadiens',19,0,2021,2,1
+'Calgary Flames','Winnipeg Jets',20,0,2021,2,1
+'Vegas Golden Knights','San Jose Sharks',22,30,2021,2,1
+'Buffalo Sabres','New York Islanders',18,0,2021,2,2
+'New Jersey Devils','Pittsburgh Penguins',19,0,2021,2,2
+'Dallas Stars','Columbus Blue Jackets',19,0,2021,2,2
+'Vancouver Canucks','Montréal Canadiens',19,0,2021,2,2
+'Carolina Hurricanes','Chicago Blackhawks',20,0,2021,2,2
+'Arizona Coyotes','St. Louis Blues',20,0,2021,2,2
+'Calgary Flames','Winnipeg Jets',20,0,2021,2,2
+'Minnesota Wild','Colorado Avalanche',20,30,2021,2,2
+'Ottawa Senators','Edmonton Oilers',22,0,2021,2,2
+'Anaheim Ducks','Los Angeles Kings',22,0,2021,2,2
+'Detroit Red Wings','Tampa Bay Lightning',17,30,2021,2,3
+'Boston Bruins','Philadelphia Flyers',20,0,2021,2,3
+'Vegas Golden Knights','San Jose Sharks',22,30,2021,2,3
+'Buffalo Sabres','New York Islanders',19,0,2021,2,4
+'Washington Capitals','New York Rangers',19,0,2021,2,4
+'Nashville Predators','Florida Panthers',19,0,2021,2,4
+'New Jersey Devils','Pittsburgh Penguins',19,0,2021,2,4
+'Dallas Stars','Columbus Blue Jackets',19,0,2021,2,4
+'Ottawa Senators','Montréal Canadiens',19,0,2021,2,4
+'Vancouver Canucks','Toronto Maple Leafs',19,0,2021,2,4
+'Carolina Hurricanes','Chicago Blackhawks',20,0,2021,2,4
+'Arizona Coyotes','St. Louis Blues',20,0,2021,2,4
+'Calgary Flames','Winnipeg Jets',20,0,2021,2,4
+'Minnesota Wild','Colorado Avalanche',21,0,2021,2,4
+'Boston Bruins','Philadelphia Flyers',19,0,2021,2,5
+'Detroit Red Wings','Tampa Bay Lightning',19,0,2021,2,5
+'Nashville Predators','Florida Panthers',19,0,2021,2,5
+'Los Angeles Kings','Vegas Golden Knights',22,0,2021,2,5
+'San Jose Sharks','Anaheim Ducks',22,0,2021,2,5
+'New York Rangers','New Jersey Devils',13,0,2021,2,6
+'Montréal Canadiens','Ottawa Senators',13,0,2021,2,6
+'Colorado Avalanche','St. Louis Blues',15,0,2021,2,6
+'Arizona Coyotes','Minnesota Wild',15,0,2021,2,6
+'Pittsburgh Penguins','New York Islanders',19,0,2021,2,6
+'Vancouver Canucks','Toronto Maple Leafs',19,0,2021,2,6
+'Buffalo Sabres','Boston Bruins',19,30,2021,2,6
+'Edmonton Oilers','Calgary Flames',22,0,2021,2,6
+'San Jose Sharks','Anaheim Ducks',22,0,2021,2,6
+'Philadelphia Flyers','Washington Capitals',12,0,2021,2,7
+'Detroit Red Wings','Florida Panthers',15,0,2021,2,7
+'Carolina Hurricanes','Columbus Blue Jackets',15,0,2021,2,7
+'Colorado Avalanche','St. Louis Blues',15,0,2021,2,7
+'Arizona Coyotes','Minnesota Wild',15,0,2021,2,7
+'Chicago Blackhawks','Dallas Stars',15,0,2021,2,7
+'Los Angeles Kings','Vegas Golden Knights',15,0,2021,2,7
+'Buffalo Sabres','Boston Bruins',19,0,2021,2,8
+'New York Islanders','New York Rangers',19,0,2021,2,8
+'Carolina Hurricanes','Columbus Blue Jackets',19,0,2021,2,8
+'Edmonton Oilers','Ottawa Senators',19,0,2021,2,8
+'Vancouver Canucks','Toronto Maple Leafs',19,0,2021,2,8
+'Tampa Bay Lightning','Nashville Predators',20,0,2021,2,8
+'Pittsburgh Penguins','New Jersey Devils',18,0,2021,2,9
+'Philadelphia Flyers','Washington Capitals',19,0,2021,2,9
+'Detroit Red Wings','Florida Panthers',19,0,2021,2,9
+'Edmonton Oilers','Ottawa Senators',19,0,2021,2,9
+'St. Louis Blues','Minnesota Wild',20,0,2021,2,9
+'Tampa Bay Lightning','Nashville Predators',20,30,2021,2,9
+'Chicago Blackhawks','Dallas Stars',20,30,2021,2,9
+'Arizona Coyotes','Colorado Avalanche',21,0,2021,2,9
+'Winnipeg Jets','Calgary Flames',22,0,2021,2,9
+'Anaheim Ducks','Vegas Golden Knights',22,0,2021,2,9
+'San Jose Sharks','Los Angeles Kings',22,0,2021,2,9
+'Boston Bruins','New York Rangers',19,0,2021,2,10
+'Toronto Maple Leafs','Montréal Canadiens',19,30,2021,2,10
+'Washington Capitals','Buffalo Sabres',19,0,2021,2,11
+'Pittsburgh Penguins','New York Islanders',19,0,2021,2,11
+'New Jersey Devils','Philadelphia Flyers',19,0,2021,2,11
+'Tampa Bay Lightning','Florida Panthers',19,0,2021,2,11
+'Edmonton Oilers','Montréal Canadiens',19,0,2021,2,11
+'Columbus Blue Jackets','Chicago Blackhawks',20,0,2021,2,11
+'Detroit Red Wings','Nashville Predators',20,0,2021,2,11
+'Ottawa Senators','Winnipeg Jets',20,0,2021,2,11
+'St. Louis Blues','Minnesota Wild',20,0,2021,2,11
+'Carolina Hurricanes','Dallas Stars',20,30,2021,2,11
+'Arizona Coyotes','Colorado Avalanche',21,0,2021,2,11
+'Calgary Flames','Vancouver Canucks',22,0,2021,2,11
+'Anaheim Ducks','Vegas Golden Knights',22,0,2021,2,11
+'San Jose Sharks','Los Angeles Kings',22,0,2021,2,11
+'Boston Bruins','New York Rangers',19,0,2021,2,12
+'Washington Capitals','Buffalo Sabres',13,0,2021,2,13
+'Ottawa Senators','Winnipeg Jets',15,0,2021,2,13
+'Boston Bruins','New York Islanders',19,0,2021,2,13
+'New Jersey Devils','Philadelphia Flyers',19,0,2021,2,13
+'Tampa Bay Lightning','Florida Panthers',19,0,2021,2,13
+'Montréal Canadiens','Toronto Maple Leafs',19,0,2021,2,13
+'St. Louis Blues','Arizona Coyotes',19,0,2021,2,13
+'Columbus Blue Jackets','Chicago Blackhawks',20,0,2021,2,13
+'Detroit Red Wings','Nashville Predators',20,0,2021,2,13
+'Carolina Hurricanes','Dallas Stars',20,0,2021,2,13
+'Calgary Flames','Vancouver Canucks',22,0,2021,2,13
+'Minnesota Wild','Los Angeles Kings',22,0,2021,2,13
+'Anaheim Ducks','San Jose Sharks',22,30,2021,2,13
+'Washington Capitals','Pittsburgh Penguins',15,0,2021,2,14
+'Colorado Avalanche','Vegas Golden Knights',19,0,2021,2,14
+'St. Louis Blues','Arizona Coyotes',16,0,2021,2,15
+'New Jersey Devils','Boston Bruins',19,0,2021,2,15
+'New York Islanders','Buffalo Sabres',19,0,2021,2,15
+'Ottawa Senators','Toronto Maple Leafs',19,0,2021,2,15
+'Chicago Blackhawks','Detroit Red Wings',19,30,2021,2,15
+'Nashville Predators','Dallas Stars',20,30,2021,2,15
+'Winnipeg Jets','Edmonton Oilers',21,0,2021,2,15
+'Calgary Flames','Vancouver Canucks',22,0,2021,2,15
+'Anaheim Ducks','San Jose Sharks',22,30,2021,2,15
+'New York Islanders','Buffalo Sabres',19,0,2021,2,16
+'Philadelphia Flyers','New York Rangers',19,0,2021,2,16
+'Columbus Blue Jackets','Carolina Hurricanes',19,0,2021,2,16
+'Florida Panthers','Tampa Bay Lightning',19,0,2021,2,16
+'Washington Capitals','Pittsburgh Penguins',19,0,2021,2,16
+'Nashville Predators','Dallas Stars',20,30,2021,2,16
+'Colorado Avalanche','Vegas Golden Knights',22,0,2021,2,16
+'Minnesota Wild','Los Angeles Kings',22,0,2021,2,16
+'Ottawa Senators','Toronto Maple Leafs',19,0,2021,2,17
+'Chicago Blackhawks','Detroit Red Wings',19,30,2021,2,17
+'Vancouver Canucks','Calgary Flames',22,0,2021,2,17
+'Winnipeg Jets','Edmonton Oilers',22,0,2021,2,17
+'New Jersey Devils','Boston Bruins',19,0,2021,2,18
+'New York Rangers','Philadelphia Flyers',19,0,2021,2,18
+'New York Islanders','Pittsburgh Penguins',19,0,2021,2,18
+'Nashville Predators','Columbus Blue Jackets',19,0,2021,2,18
+'Ottawa Senators','Toronto Maple Leafs',19,0,2021,2,18
+'San Jose Sharks','St. Louis Blues',20,0,2021,2,18
+'Tampa Bay Lightning','Dallas Stars',20,30,2021,2,18
+'Los Angeles Kings','Arizona Coyotes',21,0,2021,2,18
+'Minnesota Wild','Anaheim Ducks',22,0,2021,2,18
+'Chicago Blackhawks','Carolina Hurricanes',19,0,2021,2,19
+'Florida Panthers','Detroit Red Wings',19,30,2021,2,19
+'Edmonton Oilers','Calgary Flames',21,0,2021,2,19
+'Winnipeg Jets','Vancouver Canucks',22,0,2021,2,19
+'Buffalo Sabres','New Jersey Devils',12,30,2021,2,20
+'Vegas Golden Knights','Colorado Avalanche',15,0,2021,2,20
+'New York Rangers','Washington Capitals',19,0,2021,2,20
+'Chicago Blackhawks','Carolina Hurricanes',19,0,2021,2,20
+'New York Islanders','Pittsburgh Penguins',19,0,2021,2,20
+'Nashville Predators','Columbus Blue Jackets',19,0,2021,2,20
+'Toronto Maple Leafs','Montréal Canadiens',19,0,2021,2,20
+'Los Angeles Kings','Arizona Coyotes',19,0,2021,2,20
+'San Jose Sharks','St. Louis Blues',20,0,2021,2,20
+'Tampa Bay Lightning','Dallas Stars',20,0,2021,2,20
+'Minnesota Wild','Anaheim Ducks',21,0,2021,2,20
+'Calgary Flames','Edmonton Oilers',22,0,2021,2,20
+'Philadelphia Flyers','Boston Bruins',15,0,2021,2,21
+'New York Rangers','Washington Capitals',17,0,2021,2,21
+'Florida Panthers','Detroit Red Wings',19,0,2021,2,21
+'Montréal Canadiens','Ottawa Senators',19,0,2021,2,21
+'Winnipeg Jets','Vancouver Canucks',22,0,2021,2,21
+'Buffalo Sabres','New Jersey Devils',19,0,2021,2,22
+'Carolina Hurricanes','Tampa Bay Lightning',19,0,2021,2,22
+'Calgary Flames','Toronto Maple Leafs',19,0,2021,2,22
+'Los Angeles Kings','St. Louis Blues',20,0,2021,2,22
+'Vegas Golden Knights','Colorado Avalanche',21,0,2021,2,22
+'Anaheim Ducks','Arizona Coyotes',21,0,2021,2,22
+'New York Islanders','New Jersey Devils',19,0,2021,2,23
+'Pittsburgh Penguins','Washington Capitals',19,0,2021,2,23
+'Dallas Stars','Florida Panthers',19,0,2021,2,23
+'Chicago Blackhawks','Columbus Blue Jackets',19,0,2021,2,23
+'Montréal Canadiens','Ottawa Senators',19,0,2021,2,23
+'Nashville Predators','Detroit Red Wings',19,30,2021,2,23
+'Edmonton Oilers','Vancouver Canucks',22,0,2021,2,23
+'New York Rangers','Philadelphia Flyers',19,0,2021,2,24
+'Calgary Flames','Toronto Maple Leafs',19,0,2021,2,24
+'Anaheim Ducks','Arizona Coyotes',21,0,2021,2,24
+'Los Angeles Kings','St. Louis Blues',21,30,2021,2,24
+'Boston Bruins','New York Islanders',19,0,2021,2,25
+'Pittsburgh Penguins','Washington Capitals',19,0,2021,2,25
+'Carolina Hurricanes','Tampa Bay Lightning',19,0,2021,2,25
+'Dallas Stars','Florida Panthers',19,0,2021,2,25
+'Chicago Blackhawks','Columbus Blue Jackets',19,0,2021,2,25
+'Calgary Flames','Ottawa Senators',19,0,2021,2,25
+'Nashville Predators','Detroit Red Wings',19,30,2021,2,25
+'Montréal Canadiens','Winnipeg Jets',20,0,2021,2,25
+'Colorado Avalanche','Arizona Coyotes',21,0,2021,2,25
+'Edmonton Oilers','Vancouver Canucks',22,0,2021,2,25
+'Philadelphia Flyers','Buffalo Sabres',19,0,2021,2,26
+'Boston Bruins','New York Rangers',19,0,2021,2,26
+'Los Angeles Kings','Minnesota Wild',20,0,2021,2,26
+'Vegas Golden Knights','Anaheim Ducks',22,0,2021,2,26
+'St. Louis Blues','San Jose Sharks',22,30,2021,2,26
+'Washington Capitals','New Jersey Devils',13,0,2021,2,27
+'Calgary Flames','Ottawa Senators',13,0,2021,2,27
+'Columbus Blue Jackets','Nashville Predators',15,0,2021,2,27
+'Pittsburgh Penguins','New York Islanders',19,0,2021,2,27
+'Dallas Stars','Tampa Bay Lightning',19,0,2021,2,27
+'Carolina Hurricanes','Florida Panthers',19,0,2021,2,27
+'Toronto Maple Leafs','Edmonton Oilers',19,0,2021,2,27
+'Detroit Red Wings','Chicago Blackhawks',20,0,2021,2,27
+'Los Angeles Kings','Minnesota Wild',20,0,2021,2,27
+'Colorado Avalanche','Arizona Coyotes',21,0,2021,2,27
+'Montréal Canadiens','Winnipeg Jets',22,0,2021,2,27
+'Vegas Golden Knights','Anaheim Ducks',22,0,2021,2,27
+'St. Louis Blues','San Jose Sharks',22,30,2021,2,27
+'Boston Bruins','New York Rangers',12,0,2021,2,28
+'Philadelphia Flyers','Buffalo Sabres',15,0,2021,2,28
+'Columbus Blue Jackets','Nashville Predators',15,0,2021,2,28
+'Pittsburgh Penguins','New York Islanders',17,0,2021,2,28
+'Detroit Red Wings','Chicago Blackhawks',19,0,2021,2,28
+'Washington Capitals','New Jersey Devils',19,0,2021,3,1
+'Dallas Stars','Tampa Bay Lightning',19,0,2021,3,1
+'Carolina Hurricanes','Florida Panthers',19,0,2021,3,1
+'Calgary Flames','Ottawa Senators',19,0,2021,3,1
+'Vancouver Canucks','Winnipeg Jets',20,0,2021,3,1
+'Toronto Maple Leafs','Edmonton Oilers',22,0,2021,3,1
+'Minnesota Wild','Vegas Golden Knights',22,0,2021,3,1
+'St. Louis Blues','Anaheim Ducks',22,0,2021,3,1
+'Colorado Avalanche','San Jose Sharks',22,30,2021,3,1
+'Buffalo Sabres','New York Rangers',19,0,2021,3,2
+'Philadelphia Flyers','Pittsburgh Penguins',19,0,2021,3,2
+'Detroit Red Wings','Columbus Blue Jackets',19,0,2021,3,2
+'Ottawa Senators','Montréal Canadiens',19,0,2021,3,2
+'Vancouver Canucks','Winnipeg Jets',20,0,2021,3,2
+'Washington Capitals','Boston Bruins',19,0,2021,3,3
+'Toronto Maple Leafs','Edmonton Oilers',20,0,2021,3,3
+'St. Louis Blues','Anaheim Ducks',21,30,2021,3,3
+'Minnesota Wild','Vegas Golden Knights',22,0,2021,3,3
+'Colorado Avalanche','San Jose Sharks',22,30,2021,3,3
+'New Jersey Devils','New York Rangers',19,0,2021,3,4
+'Detroit Red Wings','Carolina Hurricanes',19,0,2021,3,4
+'Philadelphia Flyers','Pittsburgh Penguins',19,0,2021,3,4
+'Winnipeg Jets','Montréal Canadiens',19,0,2021,3,4
+'Tampa Bay Lightning','Chicago Blackhawks',20,0,2021,3,4
+'Florida Panthers','Nashville Predators',20,0,2021,3,4
+'Columbus Blue Jackets','Dallas Stars',20,30,2021,3,4
+'Ottawa Senators','Calgary Flames',21,0,2021,3,4
+'Toronto Maple Leafs','Vancouver Canucks',22,0,2021,3,4
+'Washington Capitals','Boston Bruins',19,0,2021,3,5
+'New York Rangers','New Jersey Devils',19,0,2021,3,5
+'Buffalo Sabres','New York Islanders',19,0,2021,3,5
+'Tampa Bay Lightning','Chicago Blackhawks',20,0,2021,3,5
+'Anaheim Ducks','Colorado Avalanche',21,0,2021,3,5
+'Minnesota Wild','Arizona Coyotes',21,0,2021,3,5
+'St. Louis Blues','Los Angeles Kings',21,0,2021,3,5
+'Vegas Golden Knights','San Jose Sharks',22,30,2021,3,5
+'Florida Panthers','Nashville Predators',14,0,2021,3,6
+'Winnipeg Jets','Montréal Canadiens',19,0,2021,3,6
+'Toronto Maple Leafs','Vancouver Canucks',19,0,2021,3,6
+'Minnesota Wild','Arizona Coyotes',19,0,2021,3,6
+'Columbus Blue Jackets','Dallas Stars',20,0,2021,3,6
+'Anaheim Ducks','Colorado Avalanche',20,0,2021,3,6
+'St. Louis Blues','Los Angeles Kings',21,0,2021,3,6
+'Calgary Flames','Edmonton Oilers',22,0,2021,3,6
+'Vegas Golden Knights','San Jose Sharks',22,30,2021,3,6
+'Buffalo Sabres','New York Islanders',12,0,2021,3,7
+'Tampa Bay Lightning','Chicago Blackhawks',14,30,2021,3,7
+'New Jersey Devils','Washington Capitals',17,0,2021,3,7
+'Philadelphia Flyers','Boston Bruins',19,0,2021,3,7
+'New York Rangers','Pittsburgh Penguins',19,30,2021,3,7
+'Ottawa Senators','Calgary Flames',21,30,2021,3,7
+'Vegas Golden Knights','Minnesota Wild',20,0,2021,3,8
+'Ottawa Senators','Edmonton Oilers',21,0,2021,3,8
+'Arizona Coyotes','Colorado Avalanche',21,0,2021,3,8
+'Montréal Canadiens','Vancouver Canucks',22,0,2021,3,8
+'Los Angeles Kings','Anaheim Ducks',22,0,2021,3,8
+'New York Rangers','Pittsburgh Penguins',18,0,2021,3,9
+'Boston Bruins','New York Islanders',19,0,2021,3,9
+'Buffalo Sabres','Philadelphia Flyers',19,0,2021,3,9
+'New Jersey Devils','Washington Capitals',19,0,2021,3,9
+'Nashville Predators','Carolina Hurricanes',19,0,2021,3,9
+'Florida Panthers','Columbus Blue Jackets',19,0,2021,3,9
+'Winnipeg Jets','Toronto Maple Leafs',19,0,2021,3,9
+'Tampa Bay Lightning','Detroit Red Wings',19,30,2021,3,9
+'Chicago Blackhawks','Dallas Stars',20,30,2021,3,9
+'Vegas Golden Knights','Minnesota Wild',19,0,2021,3,10
+'Ottawa Senators','Edmonton Oilers',20,0,2021,3,10
+'Arizona Coyotes','Colorado Avalanche',21,0,2021,3,10
+'Los Angeles Kings','Anaheim Ducks',21,30,2021,3,10
+'Montréal Canadiens','Vancouver Canucks',23,0,2021,3,10
+'New York Rangers','Boston Bruins',19,0,2021,3,11
+'Pittsburgh Penguins','Buffalo Sabres',19,0,2021,3,11
+'New Jersey Devils','New York Islanders',19,0,2021,3,11
+'Washington Capitals','Philadelphia Flyers',19,0,2021,3,11
+'Nashville Predators','Carolina Hurricanes',19,0,2021,3,11
+'Florida Panthers','Columbus Blue Jackets',19,0,2021,3,11
+'Winnipeg Jets','Toronto Maple Leafs',19,0,2021,3,11
+'Tampa Bay Lightning','Detroit Red Wings',19,30,2021,3,11
+'Chicago Blackhawks','Dallas Stars',20,30,2021,3,11
+'Montréal Canadiens','Calgary Flames',21,0,2021,3,11
+'Vegas Golden Knights','St. Louis Blues',20,0,2021,3,12
+'Arizona Coyotes','Minnesota Wild',20,0,2021,3,12
+'Ottawa Senators','Edmonton Oilers',21,0,2021,3,12
+'Los Angeles Kings','Colorado Avalanche',21,0,2021,3,12
+'San Jose Sharks','Anaheim Ducks',22,0,2021,3,12
+'New York Rangers','Boston Bruins',13,0,2021,3,13
+'Pittsburgh Penguins','Buffalo Sabres',19,0,2021,3,13
+'New York Islanders','New Jersey Devils',19,0,2021,3,13
+'Washington Capitals','Philadelphia Flyers',19,0,2021,3,13
+'Nashville Predators','Tampa Bay Lightning',19,0,2021,3,13
+'Chicago Blackhawks','Florida Panthers',19,0,2021,3,13
+'Dallas Stars','Columbus Blue Jackets',19,0,2021,3,13
+'Winnipeg Jets','Toronto Maple Leafs',19,0,2021,3,13
+'Montréal Canadiens','Calgary Flames',19,0,2021,3,13
+'Vegas Golden Knights','St. Louis Blues',20,0,2021,3,13
+'Edmonton Oilers','Vancouver Canucks',22,0,2021,3,13
+'San Jose Sharks','Anaheim Ducks',22,0,2021,3,13
+'Arizona Coyotes','Minnesota Wild',14,0,2021,3,14
+'Carolina Hurricanes','Detroit Red Wings',17,0,2021,3,14
+'Toronto Maple Leafs','Ottawa Senators',19,0,2021,3,14
+'Los Angeles Kings','Colorado Avalanche',19,0,2021,3,14
+'Philadelphia Flyers','New York Rangers',19,0,2021,3,15
+'New York Islanders','Washington Capitals',19,0,2021,3,15
+'Nashville Predators','Tampa Bay Lightning',19,0,2021,3,15
+'Chicago Blackhawks','Florida Panthers',19,0,2021,3,15
+'Boston Bruins','Pittsburgh Penguins',19,0,2021,3,15
+'Dallas Stars','Columbus Blue Jackets',19,0,2021,3,15
+'Vancouver Canucks','Ottawa Senators',19,0,2021,3,15
+'Montréal Canadiens','Winnipeg Jets',20,0,2021,3,15
+'Edmonton Oilers','Calgary Flames',21,0,2021,3,15
+'San Jose Sharks','Vegas Golden Knights',22,0,2021,3,15
+'St. Louis Blues','Los Angeles Kings',22,0,2021,3,15
+'Buffalo Sabres','New Jersey Devils',19,0,2021,3,16
+'New York Islanders','Washington Capitals',19,0,2021,3,16
+'Boston Bruins','Pittsburgh Penguins',19,0,2021,3,16
+'Carolina Hurricanes','Detroit Red Wings',19,30,2021,3,16
+'Arizona Coyotes','Anaheim Ducks',22,0,2021,3,16
+'Vancouver Canucks','Ottawa Senators',19,0,2021,3,17
+'Philadelphia Flyers','New York Rangers',19,30,2021,3,17
+'Montréal Canadiens','Winnipeg Jets',21,0,2021,3,17
+'Edmonton Oilers','Calgary Flames',22,0,2021,3,17
+'San Jose Sharks','Vegas Golden Knights',22,0,2021,3,17
+'St. Louis Blues','Los Angeles Kings',22,0,2021,3,17
+'Boston Bruins','Buffalo Sabres',19,0,2021,3,18
+'Philadelphia Flyers','New York Islanders',19,0,2021,3,18
+'Columbus Blue Jackets','Carolina Hurricanes',19,0,2021,3,18
+'Chicago Blackhawks','Tampa Bay Lightning',19,0,2021,3,18
+'Nashville Predators','Florida Panthers',19,0,2021,3,18
+'Dallas Stars','Detroit Red Wings',19,30,2021,3,18
+'Winnipeg Jets','Edmonton Oilers',21,0,2021,3,18
+'Minnesota Wild','Colorado Avalanche',21,0,2021,3,18
+'Arizona Coyotes','Anaheim Ducks',22,0,2021,3,18
+'Pittsburgh Penguins','New Jersey Devils',19,0,2021,3,19
+'New York Rangers','Washington Capitals',19,0,2021,3,19
+'Vancouver Canucks','Montréal Canadiens',19,0,2021,3,19
+'Calgary Flames','Toronto Maple Leafs',19,0,2021,3,19
+'St. Louis Blues','San Jose Sharks',21,0,2021,3,19
+'Vegas Golden Knights','Los Angeles Kings',22,0,2021,3,19
+'Boston Bruins','Buffalo Sabres',13,0,2021,3,20
+'Minnesota Wild','Colorado Avalanche',15,0,2021,3,20
+'Philadelphia Flyers','New York Islanders',19,0,2021,3,20
+'Columbus Blue Jackets','Carolina Hurricanes',19,0,2021,3,20
+'Chicago Blackhawks','Tampa Bay Lightning',19,0,2021,3,20
+'Nashville Predators','Florida Panthers',19,0,2021,3,20
+'Dallas Stars','Detroit Red Wings',19,0,2021,3,20
+'Vancouver Canucks','Montréal Canadiens',19,0,2021,3,20
+'Calgary Flames','Toronto Maple Leafs',19,0,2021,3,20
+'St. Louis Blues','San Jose Sharks',21,0,2021,3,20
+'Winnipeg Jets','Edmonton Oilers',22,0,2021,3,20
+'Pittsburgh Penguins','New Jersey Devils',13,0,2021,3,21
+'Vegas Golden Knights','Los Angeles Kings',18,0,2021,3,21
+'Buffalo Sabres','New York Rangers',19,0,2021,3,22
+'Carolina Hurricanes','Columbus Blue Jackets',19,0,2021,3,22
+'Edmonton Oilers','Montréal Canadiens',19,0,2021,3,22
+'Calgary Flames','Ottawa Senators',19,0,2021,3,22
+'Anaheim Ducks','Minnesota Wild',19,30,2021,3,22
+'Winnipeg Jets','Vancouver Canucks',22,0,2021,3,22
+'Colorado Avalanche','Arizona Coyotes',22,0,2021,3,22
+'Los Angeles Kings','San Jose Sharks',22,30,2021,3,22
+'New Jersey Devils','Philadelphia Flyers',19,0,2021,3,23
+'Florida Panthers','Chicago Blackhawks',20,0,2021,3,23
+'Detroit Red Wings','Nashville Predators',20,0,2021,3,23
+'Tampa Bay Lightning','Dallas Stars',20,30,2021,3,23
+'Colorado Avalanche','Arizona Coyotes',22,0,2021,3,23
+'Calgary Flames','Ottawa Senators',17,0,2021,3,24
+'Anaheim Ducks','Minnesota Wild',17,30,2021,3,24
+'Edmonton Oilers','Montréal Canadiens',19,30,2021,3,24
+'Buffalo Sabres','Pittsburgh Penguins',20,0,2021,3,24
+'Winnipeg Jets','Vancouver Canucks',22,30,2021,3,24
+'Los Angeles Kings','San Jose Sharks',22,30,2021,3,24
+'New York Islanders','Boston Bruins',19,0,2021,3,25
+'New York Rangers','Philadelphia Flyers',19,0,2021,3,25
+'New Jersey Devils','Washington Capitals',19,0,2021,3,25
+'Carolina Hurricanes','Columbus Blue Jackets',19,0,2021,3,25
+'Toronto Maple Leafs','Ottawa Senators',19,0,2021,3,25
+'Florida Panthers','Chicago Blackhawks',20,0,2021,3,25
+'Detroit Red Wings','Nashville Predators',20,0,2021,3,25
+'Tampa Bay Lightning','Dallas Stars',20,30,2021,3,25
+'Vegas Golden Knights','Colorado Avalanche',21,0,2021,3,25
+'New Jersey Devils','Washington Capitals',19,0,2021,3,26
+'Edmonton Oilers','Montréal Canadiens',19,0,2021,3,26
+'Anaheim Ducks','St. Louis Blues',20,0,2021,3,26
+'Winnipeg Jets','Calgary Flames',22,0,2021,3,26
+'San Jose Sharks','Arizona Coyotes',22,0,2021,3,26
+'New York Islanders','Boston Bruins',13,0,2021,3,27
+'New York Rangers','Philadelphia Flyers',13,0,2021,3,27
+'Buffalo Sabres','Pittsburgh Penguins',13,0,2021,3,27
+'Columbus Blue Jackets','Detroit Red Wings',15,0,2021,3,27
+'Vegas Golden Knights','Colorado Avalanche',15,0,2021,3,27
+'Tampa Bay Lightning','Carolina Hurricanes',19,0,2021,3,27
+'Edmonton Oilers','Toronto Maple Leafs',19,0,2021,3,27
+'Nashville Predators','Chicago Blackhawks',20,0,2021,3,27
+'Anaheim Ducks','St. Louis Blues',20,0,2021,3,27
+'Florida Panthers','Dallas Stars',20,0,2021,3,27
+'Winnipeg Jets','Calgary Flames',22,0,2021,3,27
+'San Jose Sharks','Arizona Coyotes',22,0,2021,3,27
+'New York Rangers','Washington Capitals',12,0,2021,3,28
+'Columbus Blue Jackets','Detroit Red Wings',15,0,2021,3,28
+'Tampa Bay Lightning','Carolina Hurricanes',17,0,2021,3,28
+'New Jersey Devils','Boston Bruins',17,30,2021,3,28
+'Florida Panthers','Dallas Stars',18,0,2021,3,28
+'Ottawa Senators','Montréal Canadiens',19,0,2021,3,28
+'Nashville Predators','Chicago Blackhawks',20,0,2021,3,28
+'Philadelphia Flyers','Buffalo Sabres',19,0,2021,3,29
+'New York Islanders','Pittsburgh Penguins',19,0,2021,3,29
+'Edmonton Oilers','Toronto Maple Leafs',19,0,2021,3,29
+'Arizona Coyotes','St. Louis Blues',20,0,2021,3,29
+'Anaheim Ducks','Colorado Avalanche',21,0,2021,3,29
+'Winnipeg Jets','Calgary Flames',22,0,2021,3,29
+'Los Angeles Kings','Vegas Golden Knights',22,0,2021,3,29
+'Minnesota Wild','San Jose Sharks',22,30,2021,3,29
+'New Jersey Devils','Boston Bruins',19,0,2021,3,30
+'Philadelphia Flyers','Buffalo Sabres',19,0,2021,3,30
+'Washington Capitals','New York Rangers',19,0,2021,3,30
+'Columbus Blue Jackets','Tampa Bay Lightning',19,0,2021,3,30
+'Detroit Red Wings','Florida Panthers',19,0,2021,3,30
+'New York Islanders','Pittsburgh Penguins',19,0,2021,3,30
+'Montréal Canadiens','Ottawa Senators',19,0,2021,3,30
+'Carolina Hurricanes','Chicago Blackhawks',19,30,2021,3,30
+'Dallas Stars','Nashville Predators',20,0,2021,3,30
+'Arizona Coyotes','St. Louis Blues',19,30,2021,3,31
+'Toronto Maple Leafs','Winnipeg Jets',19,30,2021,3,31
+'Anaheim Ducks','Colorado Avalanche',21,30,2021,3,31
+'Los Angeles Kings','Vegas Golden Knights',22,0,2021,3,31
+'Calgary Flames','Vancouver Canucks',22,30,2021,3,31
+'Minnesota Wild','San Jose Sharks',22,30,2021,3,31
+'Pittsburgh Penguins','Boston Bruins',19,0,2021,4,1
+'New York Rangers','Buffalo Sabres',19,0,2021,4,1
+'Washington Capitals','New York Islanders',19,0,2021,4,1
+'Columbus Blue Jackets','Tampa Bay Lightning',19,0,2021,4,1
+'Detroit Red Wings','Florida Panthers',19,0,2021,4,1
+'Montréal Canadiens','Ottawa Senators',19,0,2021,4,1
+'Carolina Hurricanes','Chicago Blackhawks',20,0,2021,4,1
+'Dallas Stars','Nashville Predators',20,0,2021,4,1
+'Minnesota Wild','Vegas Golden Knights',22,0,2021,4,1
+'Washington Capitals','New Jersey Devils',19,0,2021,4,2
+'Toronto Maple Leafs','Winnipeg Jets',20,0,2021,4,2
+'Calgary Flames','Edmonton Oilers',21,0,2021,4,2
+'Arizona Coyotes','Anaheim Ducks',22,0,2021,4,2
+'San Jose Sharks','Los Angeles Kings',22,0,2021,4,2
+'Pittsburgh Penguins','Boston Bruins',13,0,2021,4,3
+'Detroit Red Wings','Tampa Bay Lightning',13,0,2021,4,3
+'Chicago Blackhawks','Nashville Predators',15,0,2021,4,3
+'St. Louis Blues','Colorado Avalanche',15,0,2021,4,3
+'New York Rangers','Buffalo Sabres',19,0,2021,4,3
+'Philadelphia Flyers','New York Islanders',19,0,2021,4,3
+'Dallas Stars','Carolina Hurricanes',19,0,2021,4,3
+'Columbus Blue Jackets','Florida Panthers',19,0,2021,4,3
+'Ottawa Senators','Montréal Canadiens',19,0,2021,4,3
+'Minnesota Wild','Vegas Golden Knights',21,0,2021,4,3
+'Vancouver Canucks','Edmonton Oilers',22,0,2021,4,3
+'San Jose Sharks','Los Angeles Kings',22,0,2021,4,3
+'Detroit Red Wings','Tampa Bay Lightning',12,0,2021,4,4
+'Washington Capitals','New Jersey Devils',15,0,2021,4,4
+'Columbus Blue Jackets','Florida Panthers',17,0,2021,4,4
+'Chicago Blackhawks','Nashville Predators',17,0,2021,4,4
+'Dallas Stars','Carolina Hurricanes',19,0,2021,4,4
+'Vancouver Canucks','Winnipeg Jets',21,0,2021,4,4
+'Toronto Maple Leafs','Calgary Flames',21,0,2021,4,4
+'Arizona Coyotes','Anaheim Ducks',21,0,2021,4,4
+'Boston Bruins','Philadelphia Flyers',19,0,2021,4,5
+'Edmonton Oilers','Montréal Canadiens',19,0,2021,4,5
+'Vegas Golden Knights','St. Louis Blues',20,0,2021,4,5
+'Colorado Avalanche','Minnesota Wild',20,0,2021,4,5
+'Toronto Maple Leafs','Calgary Flames',21,30,2021,4,5
+'Arizona Coyotes','Los Angeles Kings',22,0,2021,4,5
+'Buffalo Sabres','New Jersey Devils',19,0,2021,4,6
+'Washington Capitals','New York Islanders',19,0,2021,4,6
+'Pittsburgh Penguins','New York Rangers',19,0,2021,4,6
+'Boston Bruins','Philadelphia Flyers',19,0,2021,4,6
+'Florida Panthers','Carolina Hurricanes',19,0,2021,4,6
+'Tampa Bay Lightning','Columbus Blue Jackets',19,0,2021,4,6
+'Nashville Predators','Detroit Red Wings',19,30,2021,4,6
+'Dallas Stars','Chicago Blackhawks',20,0,2021,4,6
+'Vancouver Canucks','Winnipeg Jets',20,0,2021,4,6
+'Edmonton Oilers','Ottawa Senators',17,0,2021,4,7
+'Montréal Canadiens','Toronto Maple Leafs',19,30,2021,4,7
+'Vegas Golden Knights','St. Louis Blues',21,0,2021,4,7
+'Colorado Avalanche','Minnesota Wild',21,0,2021,4,7
+'Arizona Coyotes','Los Angeles Kings',22,0,2021,4,7
+'New Jersey Devils','Buffalo Sabres',19,0,2021,4,8
+'Philadelphia Flyers','New York Islanders',19,0,2021,4,8
+'Pittsburgh Penguins','New York Rangers',19,0,2021,4,8
+'Boston Bruins','Washington Capitals',19,0,2021,4,8
+'Florida Panthers','Carolina Hurricanes',19,0,2021,4,8
+'Tampa Bay Lightning','Columbus Blue Jackets',19,0,2021,4,8
+'Winnipeg Jets','Montréal Canadiens',19,0,2021,4,8
+'Nashville Predators','Detroit Red Wings',19,30,2021,4,8
+'Dallas Stars','Chicago Blackhawks',20,0,2021,4,8
+'Vancouver Canucks','Calgary Flames',21,0,2021,4,8
+'New Jersey Devils','Buffalo Sabres',19,0,2021,4,9
+'New York Rangers','New York Islanders',19,0,2021,4,9
+'Edmonton Oilers','Ottawa Senators',19,0,2021,4,9
+'Minnesota Wild','St. Louis Blues',20,0,2021,4,9
+'Arizona Coyotes','Vegas Golden Knights',22,0,2021,4,9
+'Colorado Avalanche','Anaheim Ducks',22,0,2021,4,9
+'Los Angeles Kings','San Jose Sharks',22,30,2021,4,9
+'Florida Panthers','Dallas Stars',14,0,2021,4,10
+'Detroit Red Wings','Carolina Hurricanes',19,0,2021,4,10
+'Chicago Blackhawks','Columbus Blue Jackets',19,0,2021,4,10
+'Winnipeg Jets','Montréal Canadiens',19,0,2021,4,10
+'Ottawa Senators','Toronto Maple Leafs',19,0,2021,4,10
+'Tampa Bay Lightning','Nashville Predators',20,0,2021,4,10
+'Vancouver Canucks','Calgary Flames',22,0,2021,4,10
+'Los Angeles Kings','San Jose Sharks',22,30,2021,4,10
+'Buffalo Sabres','Philadelphia Flyers',14,0,2021,4,11
+'Minnesota Wild','St. Louis Blues',15,0,2021,4,11
+'Arizona Coyotes','Vegas Golden Knights',16,0,2021,4,11
+'Pittsburgh Penguins','New Jersey Devils',19,0,2021,4,11
+'New York Rangers','New York Islanders',19,0,2021,4,11
+'Boston Bruins','Washington Capitals',19,0,2021,4,11
+'Colorado Avalanche','Anaheim Ducks',20,0,2021,4,11
+'Detroit Red Wings','Carolina Hurricanes',19,0,2021,4,12
+'Chicago Blackhawks','Columbus Blue Jackets',19,0,2021,4,12
+'Toronto Maple Leafs','Montréal Canadiens',19,0,2021,4,12
+'Winnipeg Jets','Ottawa Senators',19,0,2021,4,12
+'Tampa Bay Lightning','Nashville Predators',20,0,2021,4,12
+'Vancouver Canucks','Edmonton Oilers',21,0,2021,4,12
+'Vegas Golden Knights','Los Angeles Kings',22,0,2021,4,12
+'Anaheim Ducks','San Jose Sharks',22,30,2021,4,12
+'New York Islanders','Boston Bruins',19,0,2021,4,13
+'New York Rangers','New Jersey Devils',19,0,2021,4,13
+'Buffalo Sabres','Washington Capitals',19,0,2021,4,13
+'Philadelphia Flyers','Pittsburgh Penguins',19,0,2021,4,13
+'Calgary Flames','Toronto Maple Leafs',19,30,2021,4,13
+'Florida Panthers','Dallas Stars',20,30,2021,4,13
+'Calgary Flames','Montréal Canadiens',19,0,2021,4,14
+'Winnipeg Jets','Ottawa Senators',19,0,2021,4,14
+'Vegas Golden Knights','Los Angeles Kings',20,0,2021,4,14
+'Vancouver Canucks','Edmonton Oilers',22,0,2021,4,14
+'Anaheim Ducks','San Jose Sharks',22,30,2021,4,14
+'New Jersey Devils','New York Rangers',19,0,2021,4,15
+'Buffalo Sabres','Washington Capitals',19,0,2021,4,15
+'Nashville Predators','Carolina Hurricanes',19,0,2021,4,15
+'Florida Panthers','Tampa Bay Lightning',19,0,2021,4,15
+'Philadelphia Flyers','Pittsburgh Penguins',19,0,2021,4,15
+'Winnipeg Jets','Toronto Maple Leafs',19,0,2021,4,15
+'Chicago Blackhawks','Detroit Red Wings',19,30,2021,4,15
+'Columbus Blue Jackets','Dallas Stars',20,30,2021,4,15
+'St. Louis Blues','Arizona Coyotes',22,0,2021,4,15
+'New York Islanders','Boston Bruins',19,0,2021,4,16
+'Calgary Flames','Montréal Canadiens',19,0,2021,4,16
+'San Jose Sharks','Minnesota Wild',20,0,2021,4,16
+'Los Angeles Kings','Colorado Avalanche',21,0,2021,4,16
+'Vegas Golden Knights','Anaheim Ducks',22,0,2021,4,16
+'New Jersey Devils','New York Rangers',12,30,2021,4,17
+'Washington Capitals','Philadelphia Flyers',12,30,2021,4,17
+'Pittsburgh Penguins','Buffalo Sabres',15,0,2021,4,17
+'St. Louis Blues','Arizona Coyotes',18,0,2021,4,17
+'Nashville Predators','Carolina Hurricanes',19,0,2021,4,17
+'Florida Panthers','Tampa Bay Lightning',19,0,2021,4,17
+'Chicago Blackhawks','Detroit Red Wings',19,0,2021,4,17
+'Toronto Maple Leafs','Vancouver Canucks',19,0,2021,4,17
+'San Jose Sharks','Minnesota Wild',20,0,2021,4,17
+'Columbus Blue Jackets','Dallas Stars',20,0,2021,4,17
+'Edmonton Oilers','Winnipeg Jets',22,0,2021,4,17
+'Washington Capitals','Boston Bruins',12,0,2021,4,18
+'New York Rangers','New Jersey Devils',15,0,2021,4,18
+'Vegas Golden Knights','Anaheim Ducks',16,0,2021,4,18
+'New York Islanders','Philadelphia Flyers',18,30,2021,4,18
+'Los Angeles Kings','Colorado Avalanche',21,0,2021,4,18
+'Carolina Hurricanes','Tampa Bay Lightning',19,0,2021,4,19
+'Columbus Blue Jackets','Florida Panthers',19,0,2021,4,19
+'Detroit Red Wings','Dallas Stars',19,30,2021,4,19
+'Ottawa Senators','Calgary Flames',21,0,2021,4,19
+'Montréal Canadiens','Edmonton Oilers',21,0,2021,4,19
+'Minnesota Wild','Arizona Coyotes',21,0,2021,4,19
+'Toronto Maple Leafs','Vancouver Canucks',22,0,2021,4,19
+'San Jose Sharks','Vegas Golden Knights',22,0,2021,4,19
+'Washington Capitals','Boston Bruins',19,0,2021,4,20
+'Pittsburgh Penguins','Buffalo Sabres',19,0,2021,4,20
+'Philadelphia Flyers','New Jersey Devils',19,0,2021,4,20
+'New York Rangers','New York Islanders',19,0,2021,4,20
+'Carolina Hurricanes','Tampa Bay Lightning',19,0,2021,4,20
+'Columbus Blue Jackets','Florida Panthers',19,0,2021,4,20
+'Detroit Red Wings','Dallas Stars',20,30,2021,4,20
+'Ottawa Senators','Calgary Flames',21,0,2021,4,20
+'Montréal Canadiens','Edmonton Oilers',21,0,2021,4,20
+'St. Louis Blues','Colorado Avalanche',21,30,2021,4,20
+'Anaheim Ducks','Los Angeles Kings',22,0,2021,4,20
+'Nashville Predators','Chicago Blackhawks',19,0,2021,4,21
+'Toronto Maple Leafs','Winnipeg Jets',20,0,2021,4,21
+'Minnesota Wild','Arizona Coyotes',21,0,2021,4,21
+'San Jose Sharks','Vegas Golden Knights',21,30,2021,4,21
+'Boston Bruins','Buffalo Sabres',19,0,2021,4,22
+'Washington Capitals','New York Islanders',19,0,2021,4,22
+'Columbus Blue Jackets','Tampa Bay Lightning',19,0,2021,4,22
+'Carolina Hurricanes','Florida Panthers',19,0,2021,4,22
+'New Jersey Devils','Pittsburgh Penguins',19,0,2021,4,22
+'Dallas Stars','Detroit Red Wings',19,30,2021,4,22
+'Colorado Avalanche','St. Louis Blues',20,0,2021,4,22
+'Montréal Canadiens','Calgary Flames',21,0,2021,4,22
+'Ottawa Senators','Vancouver Canucks',22,0,2021,4,22
+'Boston Bruins','Buffalo Sabres',19,0,2021,4,23
+'Philadelphia Flyers','New York Rangers',19,0,2021,4,23
+'Nashville Predators','Chicago Blackhawks',20,0,2021,4,23
+'Toronto Maple Leafs','Winnipeg Jets',20,0,2021,4,23
+'Minnesota Wild','San Jose Sharks',21,0,2021,4,23
+'Arizona Coyotes','Los Angeles Kings',22,0,2021,4,23
+'New Jersey Devils','Pittsburgh Penguins',12,30,2021,4,24
+'Colorado Avalanche','St. Louis Blues',15,0,2021,4,24
+'Washington Capitals','New York Islanders',19,0,2021,4,24
+'Carolina Hurricanes','Florida Panthers',19,0,2021,4,24
+'Dallas Stars','Detroit Red Wings',19,0,2021,4,24
+'Toronto Maple Leafs','Winnipeg Jets',19,0,2021,4,24
+'Montréal Canadiens','Calgary Flames',19,0,2021,4,24
+'Minnesota Wild','San Jose Sharks',21,0,2021,4,24
+'Ottawa Senators','Vancouver Canucks',22,0,2021,4,24
+'Arizona Coyotes','Los Angeles Kings',22,0,2021,4,24
+'Boston Bruins','Pittsburgh Penguins',15,0,2021,4,25
+'Buffalo Sabres','New York Rangers',18,0,2021,4,25
+'New York Islanders','Philadelphia Flyers',18,0,2021,4,25
+'Columbus Blue Jackets','Tampa Bay Lightning',19,0,2021,4,25
+'Vancouver Canucks','Ottawa Senators',19,0,2021,4,26
+'Carolina Hurricanes','Dallas Stars',19,30,2021,4,26
+'Florida Panthers','Nashville Predators',20,0,2021,4,26
+'Edmonton Oilers','Winnipeg Jets',20,0,2021,4,26
+'St. Louis Blues','Minnesota Wild',20,0,2021,4,26
+'Montréal Canadiens','Calgary Flames',22,0,2021,4,26
+'Colorado Avalanche','Vegas Golden Knights',22,0,2021,4,26
+'Anaheim Ducks','Los Angeles Kings',22,0,2021,4,26
+'Arizona Coyotes','San Jose Sharks',22,30,2021,4,26
+'New York Islanders','New Jersey Devils',19,0,2021,4,27
+'Buffalo Sabres','New York Rangers',19,0,2021,4,27
+'Washington Capitals','Philadelphia Flyers',19,0,2021,4,27
+'Boston Bruins','Pittsburgh Penguins',19,0,2021,4,27
+'Detroit Red Wings','Columbus Blue Jackets',19,0,2021,4,27
+'Tampa Bay Lightning','Chicago Blackhawks',20,0,2021,4,27
+'Florida Panthers','Nashville Predators',20,0,2021,4,27
+'Carolina Hurricanes','Dallas Stars',20,30,2021,4,27
+'Vancouver Canucks','Ottawa Senators',17,30,2021,4,28
+'St. Louis Blues','Minnesota Wild',19,0,2021,4,28
+'Toronto Maple Leafs','Montréal Canadiens',20,0,2021,4,28
+'Edmonton Oilers','Winnipeg Jets',21,0,2021,4,28
+'Colorado Avalanche','Vegas Golden Knights',21,30,2021,4,28
+'Anaheim Ducks','Los Angeles Kings',22,0,2021,4,28
+'Arizona Coyotes','San Jose Sharks',22,30,2021,4,28
+'Buffalo Sabres','Boston Bruins',19,0,2021,4,29
+'Philadelphia Flyers','New Jersey Devils',19,0,2021,4,29
+'New York Islanders','New York Rangers',19,0,2021,4,29
+'Pittsburgh Penguins','Washington Capitals',19,0,2021,4,29
+'Detroit Red Wings','Carolina Hurricanes',19,0,2021,4,29
+'Florida Panthers','Chicago Blackhawks',20,0,2021,4,29
+'Dallas Stars','Nashville Predators',20,0,2021,4,29
+'Calgary Flames','Edmonton Oilers',21,0,2021,4,29
+'Winnipeg Jets','Montréal Canadiens',19,0,2021,4,30
+'Vancouver Canucks','Toronto Maple Leafs',19,0,2021,4,30
+'Minnesota Wild','St. Louis Blues',20,0,2021,4,30
+'San Jose Sharks','Colorado Avalanche',21,0,2021,4,30
+'Vegas Golden Knights','Arizona Coyotes',22,0,2021,4,30
+'Los Angeles Kings','Anaheim Ducks',22,0,2021,4,30
+'Buffalo Sabres','Boston Bruins',13,0,2021,5,1
+'Tampa Bay Lightning','Detroit Red Wings',15,0,2021,5,1
+'New York Rangers','New York Islanders',19,0,2021,5,1
+'New Jersey Devils','Philadelphia Flyers',19,0,2021,5,1
+'Pittsburgh Penguins','Washington Capitals',19,0,2021,5,1
+'Columbus Blue Jackets','Carolina Hurricanes',19,0,2021,5,1
+'Ottawa Senators','Montréal Canadiens',19,0,2021,5,1
+'Vancouver Canucks','Toronto Maple Leafs',19,0,2021,5,1
+'Florida Panthers','Chicago Blackhawks',20,0,2021,5,1
+'Minnesota Wild','St. Louis Blues',20,0,2021,5,1
+'Dallas Stars','Nashville Predators',20,0,2021,5,1
+'San Jose Sharks','Colorado Avalanche',20,0,2021,5,1
+'Calgary Flames','Edmonton Oilers',22,0,2021,5,1
+'Vegas Golden Knights','Arizona Coyotes',22,0,2021,5,1
+'Los Angeles Kings','Anaheim Ducks',22,0,2021,5,1
+'Tampa Bay Lightning','Detroit Red Wings',15,0,2021,5,2
+'New York Islanders','Buffalo Sabres',19,0,2021,5,3
+'Boston Bruins','New Jersey Devils',19,0,2021,5,3
+'Washington Capitals','New York Rangers',19,0,2021,5,3
+'Pittsburgh Penguins','Philadelphia Flyers',19,0,2021,5,3
+'Chicago Blackhawks','Carolina Hurricanes',19,0,2021,5,3
+'Nashville Predators','Columbus Blue Jackets',19,0,2021,5,3
+'Toronto Maple Leafs','Montréal Canadiens',19,0,2021,5,3
+'Winnipeg Jets','Ottawa Senators',19,0,2021,5,3
+'Anaheim Ducks','St. Louis Blues',20,0,2021,5,3
+'Vegas Golden Knights','Minnesota Wild',20,0,2021,5,3
+'Los Angeles Kings','Arizona Coyotes',22,0,2021,5,3
+'Colorado Avalanche','San Jose Sharks',22,30,2021,5,3
+'New York Islanders','Buffalo Sabres',19,0,2021,5,4
+'Boston Bruins','New Jersey Devils',19,0,2021,5,4
+'Pittsburgh Penguins','Philadelphia Flyers',19,0,2021,5,4
+'Chicago Blackhawks','Carolina Hurricanes',19,0,2021,5,4
+'Florida Panthers','Tampa Bay Lightning',19,0,2021,5,4
+'Edmonton Oilers','Vancouver Canucks',22,0,2021,5,4
+'Washington Capitals','New York Rangers',19,0,2021,5,5
+'Nashville Predators','Columbus Blue Jackets',19,0,2021,5,5
+'Toronto Maple Leafs','Ottawa Senators',19,0,2021,5,5
+'Anaheim Ducks','St. Louis Blues',20,0,2021,5,5
+'Vegas Golden Knights','Minnesota Wild',20,0,2021,5,5
+'Winnipeg Jets','Calgary Flames',21,30,2021,5,5
+'Los Angeles Kings','Arizona Coyotes',22,0,2021,5,5
+'Colorado Avalanche','San Jose Sharks',22,30,2021,5,5
+'New York Rangers','Boston Bruins',19,0,2021,5,6
+'New Jersey Devils','New York Islanders',19,0,2021,5,6
+'Tampa Bay Lightning','Florida Panthers',19,0,2021,5,6
+'Buffalo Sabres','Pittsburgh Penguins',19,0,2021,5,6
+'Dallas Stars','Chicago Blackhawks',20,0,2021,5,6
+'Edmonton Oilers','Vancouver Canucks',22,0,2021,5,6
+'Philadelphia Flyers','Washington Capitals',19,0,2021,5,7
+'Detroit Red Wings','Columbus Blue Jackets',19,0,2021,5,7
+'Montréal Canadiens','Toronto Maple Leafs',19,0,2021,5,7
+'Carolina Hurricanes','Nashville Predators',20,0,2021,5,7
+'Ottawa Senators','Winnipeg Jets',20,0,2021,5,7
+'Anaheim Ducks','Minnesota Wild',20,0,2021,5,7
+'Edmonton Oilers','Calgary Flames',20,30,2021,5,7
+'St. Louis Blues','Vegas Golden Knights',22,0,2021,5,7
+'Colorado Avalanche','Los Angeles Kings',22,0,2021,5,7
+'Arizona Coyotes','San Jose Sharks',22,30,2021,5,7
+'New York Rangers','Boston Bruins',19,0,2021,5,8
+'New Jersey Devils','New York Islanders',19,0,2021,5,8
+'Philadelphia Flyers','Washington Capitals',19,0,2021,5,8
+'Tampa Bay Lightning','Florida Panthers',19,0,2021,5,8
+'Buffalo Sabres','Pittsburgh Penguins',19,0,2021,5,8
+'Detroit Red Wings','Columbus Blue Jackets',19,0,2021,5,8
+'Montréal Canadiens','Toronto Maple Leafs',19,0,2021,5,8
+'Ottawa Senators','Winnipeg Jets',19,0,2021,5,8
+'Dallas Stars','Chicago Blackhawks',20,0,2021,5,8
+'Carolina Hurricanes','Nashville Predators',20,0,2021,5,8
+'Anaheim Ducks','Minnesota Wild',20,0,2021,5,8
+'Calgary Flames','Vancouver Canucks',22,0,2021,5,8
+'St. Louis Blues','Vegas Golden Knights',22,0,2021,5,8
+'Colorado Avalanche','Los Angeles Kings',22,0,2021,5,8
+'Arizona Coyotes','San Jose Sharks',22,30,2021,5,8

@@ -1,47 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
+import { Colour, teamColour } from './colours';
+import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
+import { Game } from './games';
 import './index.css';
-import './team-colours';
-
-const MONTHS = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
-
-function monthName(month: number): string {
-  return MONTHS[month];
-}
-
-function numDaysInMonth(month: number, year: number): number {
-  // NB: Months are 0-indexed (i.e. January = 0). Day 0 of the following month is the last day of the given month.
-  return new Date(year, month + 1, 0).getDate();
-}
-
-type Day = {
-  date: number;
-  week: number;
-  dayOfWeek: number;
-};
+import { NHLGames2021 } from './schedules/nhl-2021';
+import { MLB, NBA, NFL, NHL, Team } from './teams';
 
 type CalendarDayProps = {
   day: Day;
 };
 
 function CalendarDay(props: CalendarDayProps): JSX.Element {
+  const { day } = props;
   return (
-    <div className="day">
-      date {props.day.date}, dayOfWeek {props.day.dayOfWeek}, week {props.day.week}
+    <div className="day" style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}>
+      <span style={{ textAlign: 'center' }}>{day.date}</span>
     </div>
   );
 }
@@ -51,25 +26,29 @@ function App(): JSX.Element {
 
   const [month, setMonth] = useState(currentDate.getMonth());
   const [year, setYear] = useState(currentDate.getFullYear());
-  const [firstDay, setFirstDay] = useState(currentDate.getDay());
-  const [daysInMonth, setDaysInMonth] = useState(numDaysInMonth(month, year));
+  const [firstDay, setFirstDay] = useState(0);
+  const [daysInMonth, setDaysInMonth] = useState(0);
+  const [days, setDays] = useState<Day[]>([]);
 
-  const [days, setDays] = useState<Day[]>([
-    ...Array.from({ length: daysInMonth }, (_, i) => ({
-      date: i + 1,
-      dayOfWeek: ((i + firstDay - 1) % 7) + 1,
-      week: Math.floor((i + firstDay - 1) / 7) + 1,
-    })),
-  ]);
+  useEffect(() => {
+    setFirstDay(new Date(year, month, 1).getDay());
+    setDaysInMonth(numDaysInMonth(month, year));
+  }, [year, month]);
+
+  useEffect(() => {
+    setDays(generateCalendar(daysInMonth, firstDay));
+  }, [daysInMonth, firstDay]);
 
   return (
     <div className="App">
       <h2>
         {monthName(month)} {year}
       </h2>
-      {days.map((day: Day) => (
-        <CalendarDay key={day.date} day={day} />
-      ))}
+      <div className="grid-container">
+        {days.map((day: Day) => (
+          <CalendarDay key={day.date} day={day} />
+        ))}
+      </div>
     </div>
   );
 }

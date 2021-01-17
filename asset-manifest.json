@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/sports-schedule/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/sports-schedule/static/js/main.1c1c2b56.chunk.js",
-    "main.js.map": "/sports-schedule/static/js/main.1c1c2b56.chunk.js.map",
-    "runtime-main.js": "/sports-schedule/static/js/runtime-main.5190d3c2.js",
-    "runtime-main.js.map": "/sports-schedule/static/js/runtime-main.5190d3c2.js.map",
-    "static/js/2.dba09e77.chunk.js": "/sports-schedule/static/js/2.dba09e77.chunk.js",
-    "static/js/2.dba09e77.chunk.js.map": "/sports-schedule/static/js/2.dba09e77.chunk.js.map",
-    "static/js/3.597e27d1.chunk.js": "/sports-schedule/static/js/3.597e27d1.chunk.js",
-    "static/js/3.597e27d1.chunk.js.map": "/sports-schedule/static/js/3.597e27d1.chunk.js.map",
+    "main.css": "/sports-schedule/static/css/main.b70eb811.chunk.css",
+    "main.js": "/sports-schedule/static/js/main.0743f59e.chunk.js",
+    "main.js.map": "/sports-schedule/static/js/main.0743f59e.chunk.js.map",
+    "runtime-main.js": "/sports-schedule/static/js/runtime-main.900dc448.js",
+    "runtime-main.js.map": "/sports-schedule/static/js/runtime-main.900dc448.js.map",
+    "static/js/2.3f1c2aaa.chunk.js": "/sports-schedule/static/js/2.3f1c2aaa.chunk.js",
+    "static/js/2.3f1c2aaa.chunk.js.map": "/sports-schedule/static/js/2.3f1c2aaa.chunk.js.map",
     "index.html": "/sports-schedule/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/sports-schedule/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.dba09e77.chunk.js.LICENSE.txt": "/sports-schedule/static/js/2.dba09e77.chunk.js.LICENSE.txt"
+    "static/css/main.b70eb811.chunk.css.map": "/sports-schedule/static/css/main.b70eb811.chunk.css.map",
+    "static/js/2.3f1c2aaa.chunk.js.LICENSE.txt": "/sports-schedule/static/js/2.3f1c2aaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5190d3c2.js",
-    "static/js/2.dba09e77.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.1c1c2b56.chunk.js"
+    "static/js/runtime-main.900dc448.js",
+    "static/js/2.3f1c2aaa.chunk.js",
+    "static/css/main.b70eb811.chunk.css",
+    "static/js/main.0743f59e.chunk.js"
   ]
 }

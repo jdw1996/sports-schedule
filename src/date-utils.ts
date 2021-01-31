@@ -1,13 +1,10 @@
-type GameDisplay = {
-  colour: string;
-  label: string;
-};
+import { Game } from './games';
 
 export type Day = {
   date: number;
   week: number;
   dayOfWeek: number;
-  games: GameDisplay[];
+  games: Game[];
 };
 
 const MONTHS = [

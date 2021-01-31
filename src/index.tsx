@@ -3,8 +3,16 @@ import ReactDOM from 'react-dom';
 
 import { Colour, teamColour } from './colours';
 import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
+import { getSchedule } from './espn-client';
+import { Game } from './games';
 import './index.css';
-import { MLB, NBA, NFL, NHL, Team } from './teams';
+import { LEAGUES, MLB_TEAMS, NBA_TEAMS, NFL_TEAMS, NHL_TEAMS } from './teams';
+
+type FavouriteTeam = {
+  league: string;
+  teamCode: string;
+  colour: Colour;
+};
 
 type CalendarDayProps = {
   day: Day;
@@ -29,27 +37,20 @@ function App(): JSX.Element {
   const [firstDay, setFirstDay] = useState(0);
   const [daysInMonth, setDaysInMonth] = useState(0);
   const [days, setDays] = useState<Day[]>([]);
-  const [favouriteTeams, setFavouriteTeams] = useState([NHL.TOR]);
-  const [favouriteTeamColours, setFavouriteTeamColours] = useState(
-    new Map<Team, Colour>([[NHL.TOR, Colour.ROYAL]]),
-  );
+  const [favouriteTeams, setFavouriteTeams] = useState<FavouriteTeam[]>([
+    { league: 'NHL', teamCode: 'TOR', colour: Colour.ROYAL },
+  ]);
+  const [games, setGames] = useState<Game[]>([]);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  // useEffect(() => {
-  //   const newFirstDay = new Date(year, month, 1).getDay();
-  //   const newDaysInMonth = numDaysInMonth(month, year);
-  //   const newCalendar = generateCalendar(newDaysInMonth, newFirstDay);
-  //   for (const team of favouriteTeams) {
-  //     for (const game of schedules.get(year)?.get(month)?.get(team) ?? []) {
-  //       newCalendar[game.day - 1].games.push({
-  //         colour: favouriteTeamColours.get(team) ?? Colour.BLACK,
-  //         label: `${game.home === team ? `v${game.visitor}` : `@${game.home}`}${game.hour}${game.minute}`,
-  //       });
-  //     }
-  //   }
-  //   setFirstDay(newFirstDay);
-  //   setDaysInMonth(newDaysInMonth);
-  //   setDays(newCalendar);
-  // }, [year, month]);
+  useEffect(() => {
+    const newFirstDay = new Date(year, month, 1).getDay();
+    const newDaysInMonth = numDaysInMonth(month, year);
+    const newCalendar = generateCalendar(newDaysInMonth, newFirstDay);
+    setFirstDay(newFirstDay);
+    setDaysInMonth(newDaysInMonth);
+    setDays(newCalendar);
+  }, [year, month]);
 
   useEffect(() => {
     setDays(generateCalendar(daysInMonth, firstDay));

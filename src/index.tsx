@@ -12,7 +12,12 @@ type FavouriteTeam = {
   league: string;
   teamCode: string;
   colour: Colour;
+  games: Game[];
 };
+
+function favouriteTeamId(fav: FavouriteTeam): string {
+  return `${fav.league}${fav.teamCode}`;
+}
 
 type CalendarDayProps = {
   day: Day;
@@ -37,10 +42,7 @@ function App(): JSX.Element {
   const [firstDay, setFirstDay] = useState(0);
   const [daysInMonth, setDaysInMonth] = useState(0);
   const [days, setDays] = useState<Day[]>([]);
-  const [favouriteTeams, setFavouriteTeams] = useState<FavouriteTeam[]>([
-    { league: 'NHL', teamCode: 'TOR', colour: Colour.ROYAL },
-  ]);
-  const [games, setGames] = useState<Game[]>([]);
+  const [favouriteTeams, setFavouriteTeams] = useState<Map<string, FavouriteTeam>>(new Map([]));
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {

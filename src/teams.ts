@@ -7,7 +7,7 @@ export enum MLB {
   CIN = 'Cincinnati Reds',
   CLE = 'Cleveland Baseball Team',
   COL = 'Colorado Rockies',
-  CWS = 'Chicago White Sox',
+  CHW = 'Chicago White Sox',
   DET = 'Detroit Tigers',
   HOU = 'Houston Astros',
   KC = 'Kansas City Royals',
@@ -60,7 +60,7 @@ export enum NBA {
   SA = 'San Antonio Spurs',
   SAC = 'Sacramento Kings',
   TOR = 'Toronto Raptors',
-  UTA = 'Utah Jazz',
+  UTH = 'Utah Jazz',
   WSH = 'Washington Wizards',
 }
 
@@ -128,7 +128,7 @@ export enum NHL {
   TB = 'Tampa Bay Lightning',
   TOR = 'Toronto Maple Leafs',
   VAN = 'Vancouver Canucks',
-  VGK = 'Vegas Golden Knights',
+  VGS = 'Vegas Golden Knights',
   WPG = 'Winnipeg Jets',
   WSH = 'Washington Capitals',
 }

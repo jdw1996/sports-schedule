@@ -23,13 +23,59 @@ body {
 
 .new-team {
   text-align: left;
-  border: 1px solid black;
 }
 
 .new-team > * {
   margin: 2px;
 }
 
-.team-select {
-  width: 240px;
+/* Colours */
+
+.Red {
+  background-color: #df0606;
+}
+.Brick {
+  background-color: #910808;
+}
+.Brown {
+  background-color: #613a05;
+}
+.Orange {
+  background-color: #f96a20;
+}
+.Yellow {
+  background-color: #f9cb06;
+}
+.Gold {
+  background-color: #bfa740;
+}
+.Green {
+  background-color: #248e0b;
+}
+.Teal {
+  background-color: #16999d;
+}
+.Sky {
+  background-color: #20c0f9;
+}
+.Royal {
+  background-color: #2039df;
+}
+.Navy {
+  background-color: #211b7e;
+}
+.Purple {
+  background-color: #6f0fbd;
+}
+.Pink {
+  background-color: #f25ae9;
+}
+.Black {
+  background-color: #000000;
+}
+.Silver {
+  background-color: #a6a6a6;
+}
+.Grey {
+  background-color: #4d4d4d;
 }

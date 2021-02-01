@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import { Colour, teamColour } from './colours';
+import { COLOURS, DEFAULT_COLOUR, teamColour } from './colours';
 import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
 import { getSchedule } from './espn-client';
 import { Game } from './games';
 import './index.css';
-import { LEAGUES, TEAMS, MLB_TEAMS, NBA_TEAMS, NFL_TEAMS, NHL_TEAMS } from './teams';
+import { LEAGUES, TEAMS } from './teams';
 
 type FavouriteTeam = {
   league: string;
   teamCode: string;
-  colour: Colour;
+  colour: string;
   games: Game[];
 };
 
@@ -44,6 +44,7 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
 function TeamPicker() {
   const [pendingLeague, setPendingLeague] = useState(LEAGUES[0]);
   const [pendingTeam, setPendingTeam] = useState(defaultTeam(pendingLeague));
+  const [colour, setColour] = useState(DEFAULT_COLOUR);
 
   useEffect(() => {
     if (!(pendingTeam in (TEAMS.get(pendingLeague) ?? {}))) {
@@ -51,8 +52,12 @@ function TeamPicker() {
     }
   }, [pendingLeague]);
 
+  useEffect(() => {
+    setColour(teamColour(pendingLeague, pendingTeam, []));
+  }, [pendingLeague, pendingTeam]);
+
   return (
-    <div className="new-team">
+    <div className={`new-team ${colour}`}>
       <select
         className="league-select"
         onChange={(event) => {
@@ -76,6 +81,19 @@ function TeamPicker() {
         {Object.entries(TEAMS.get(pendingLeague) ?? {}).map(([teamCode, teamName]) => (
           <option key={teamCode} value={teamCode}>
             {teamName}
+          </option>
+        ))}
+      </select>
+      <select
+        className="colour-select"
+        onChange={(event) => {
+          setColour(event.target.value);
+        }}
+        value={colour}
+      >
+        {COLOURS.map((colourOption) => (
+          <option key={colourOption} value={colourOption}>
+            {colourOption}
           </option>
         ))}
       </select>

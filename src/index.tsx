@@ -8,6 +8,9 @@ import { Game } from './games';
 import './index.css';
 import { LEAGUES, TEAMS } from './teams';
 
+const ADD_SYMBOL = '➕';
+const REMOVE_SYMBOL = '✖️';
+
 type FavouriteTeam = {
   league: string;
   teamCode: string;
@@ -41,7 +44,13 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
   );
 }
 
-function TeamPicker() {
+type TeamPickerProps = {
+  addToFavourites: (league: string, team: string, colour: string) => void;
+};
+
+function TeamPicker(props: TeamPickerProps) {
+  const { addToFavourites } = props;
+
   const [pendingLeague, setPendingLeague] = useState(LEAGUES[0]);
   const [pendingTeam, setPendingTeam] = useState(defaultTeam(pendingLeague));
   const [colour, setColour] = useState(DEFAULT_COLOUR);
@@ -97,6 +106,13 @@ function TeamPicker() {
           </option>
         ))}
       </select>
+      <button
+        onClick={() => {
+          addToFavourites(pendingLeague, pendingTeam, colour);
+        }}
+      >
+        {ADD_SYMBOL}
+      </button>
     </div>
   );
 }
@@ -134,7 +150,25 @@ function App(): JSX.Element {
           <CalendarDay key={day.date} day={day} />
         ))}
       </div>
-      <TeamPicker />
+      <span>{`You have ${favouriteTeams.size} favourite teams.`}</span>
+      <TeamPicker
+        addToFavourites={(league: string, teamCode: string, colour: string) => {
+          setFavouriteTeams((oldFavouriteTeams) => {
+            const newFavouriteTeam = {
+              league,
+              teamCode,
+              colour,
+              games: [], // TODO: Actually get games here.
+            };
+            const newFavouriteTeamKey = favouriteTeamId(newFavouriteTeam);
+            const newFavouriteTeams = new Map(oldFavouriteTeams);
+            if (!oldFavouriteTeams.has(newFavouriteTeamKey)) {
+              newFavouriteTeams.set(newFavouriteTeamKey, newFavouriteTeam);
+            }
+            return newFavouriteTeams;
+          });
+        }}
+      />
     </div>
   );
 }

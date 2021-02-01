@@ -6,7 +6,7 @@ import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
 import { getSchedule } from './espn-client';
 import { Game } from './games';
 import './index.css';
-import { LEAGUES, MLB_TEAMS, NBA_TEAMS, NFL_TEAMS, NHL_TEAMS } from './teams';
+import { LEAGUES, TEAMS, MLB_TEAMS, NBA_TEAMS, NFL_TEAMS, NHL_TEAMS } from './teams';
 
 type FavouriteTeam = {
   league: string;
@@ -17,6 +17,13 @@ type FavouriteTeam = {
 
 function favouriteTeamId(fav: FavouriteTeam): string {
   return `${fav.league}${fav.teamCode}`;
+}
+
+function defaultTeam(league: string): string {
+  if (league === 'NFL') {
+    return 'BUF';
+  }
+  return 'TOR';
 }
 
 type CalendarDayProps = {
@@ -34,6 +41,48 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
   );
 }
 
+function TeamPicker() {
+  const [pendingLeague, setPendingLeague] = useState(LEAGUES[0]);
+  const [pendingTeam, setPendingTeam] = useState(defaultTeam(pendingLeague));
+
+  useEffect(() => {
+    if (!(pendingTeam in (TEAMS.get(pendingLeague) ?? {}))) {
+      setPendingTeam(defaultTeam(pendingLeague));
+    }
+  }, [pendingLeague]);
+
+  return (
+    <div className="new-team">
+      <select
+        className="league-select"
+        onChange={(event) => {
+          setPendingLeague(event.target.value);
+        }}
+        value={pendingLeague}
+      >
+        {LEAGUES.map((league) => (
+          <option key={league} value={league}>
+            {league}
+          </option>
+        ))}
+      </select>
+      <select
+        className="team-select"
+        onChange={(event) => {
+          setPendingTeam(event.target.value);
+        }}
+        value={pendingTeam}
+      >
+        {Object.entries(TEAMS.get(pendingLeague) ?? {}).map(([teamCode, teamName]) => (
+          <option key={teamCode} value={teamCode}>
+            {teamName}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
+
 function App(): JSX.Element {
   const currentDate = new Date();
 
@@ -43,7 +92,6 @@ function App(): JSX.Element {
   const [daysInMonth, setDaysInMonth] = useState(0);
   const [days, setDays] = useState<Day[]>([]);
   const [favouriteTeams, setFavouriteTeams] = useState<Map<string, FavouriteTeam>>(new Map([]));
-  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     const newFirstDay = new Date(year, month, 1).getDay();
@@ -68,6 +116,7 @@ function App(): JSX.Element {
           <CalendarDay key={day.date} day={day} />
         ))}
       </div>
+      <TeamPicker />
     </div>
   );
 }

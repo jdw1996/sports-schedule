@@ -1,4 +1,3 @@
-import { Colour } from './colours';
 import { Game } from './games';
 
 const URLS: Map<string, string> = new Map([

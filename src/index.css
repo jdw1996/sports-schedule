@@ -20,3 +20,16 @@ body {
   font-family: monospace;
   text-align: center;
 }
+
+.new-team {
+  text-align: left;
+  border: 1px solid black;
+}
+
+.new-team > * {
+  margin: 2px;
+}
+
+.team-select {
+  width: 240px;
+}

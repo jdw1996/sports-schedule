@@ -1,6 +1,7 @@
 export enum Colour {
   RED = '#df0606',
   BRICK = '#910808',
+  BROWN = '#613a05',
   ORANGE = '#f96a20',
   YELLOW = '#f9cb06',
   GOLD = '#bfa740',
@@ -11,7 +12,6 @@ export enum Colour {
   NAVY = '#211b7e',
   PURPLE = '#6f0fbd',
   PINK = '#f25ae9',
-  BROWN = '#613a05',
   BLACK = '#000000',
   SILVER = '#a6a6a6',
   GREY = '#4d4d4d',

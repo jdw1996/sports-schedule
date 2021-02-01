@@ -134,3 +134,10 @@ export const NHL_TEAMS = {
   WPG: 'Winnipeg Jets',
   WSH: 'Washington Capitals',
 };
+
+export const TEAMS = new Map<string, Record<string, string>>([
+  ['MLB', MLB_TEAMS],
+  ['NBA', NBA_TEAMS],
+  ['NFL', NFL_TEAMS],
+  ['NHL', NHL_TEAMS],
+]);

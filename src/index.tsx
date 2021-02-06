@@ -60,16 +60,16 @@ type FavouriteTeamCardProps = {
   teamName: string;
   colour: string;
   numGames: number;
-  removeTeam: () => void;
+  removeFromFavourites: () => void;
 };
 
 function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
-  const { teamName, colour, numGames, removeTeam } = props;
+  const { teamName, colour, numGames, removeFromFavourites } = props;
 
   return (
     <div className={`favourite-team ${colour}`}>
       <span>{`${teamName} (${numGames})`}</span>
-      <button className="remove-button" onClick={removeTeam}>
+      <button className="remove-button" onClick={removeFromFavourites}>
         {REMOVE_SYMBOL}
       </button>
     </div>
@@ -221,6 +221,16 @@ function App(): JSX.Element {
     }
   };
 
+  const removeFromFavourites = (league: string, teamCode: string) => {
+    const params = new URLSearchParams(window.location.search);
+    const oldParams = params.toString();
+    params.delete(getTeamId(league, teamCode));
+    const newParams = params.toString();
+    if (oldParams !== newParams) {
+      window.location.search = newParams;
+    }
+  };
+
   return (
     <div className="App">
       <h2>
@@ -263,12 +273,8 @@ function App(): JSX.Element {
           teamName={getTeamName(favTeam.league, favTeam.teamCode)}
           colour={favTeam.colour}
           numGames={favTeam.games.length}
-          removeTeam={() => {
-            setFavouriteTeams((oldFavouriteTeams) => {
-              const newFavouriteTeams = new Map(oldFavouriteTeams);
-              newFavouriteTeams.delete(getTeamId(favTeam.league, favTeam.teamCode));
-              return newFavouriteTeams;
-            });
+          removeFromFavourites={() => {
+            removeFromFavourites(favTeam.league, favTeam.teamCode);
           }}
         />
       ))}

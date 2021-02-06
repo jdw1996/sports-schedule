@@ -1,7 +1,7 @@
 body {
   width: 500px;
   margin: 0 auto;
-  font-family: serif;
+  font-family: 'Anonymous Pro', monospace;
   text-align: center;
 }
 
@@ -21,8 +21,8 @@ button {
 .day {
   width: 100%;
   border: 1px solid black;
-  font-family: monospace;
   text-align: center;
+  font-size: small;
 }
 
 .favourite-team {

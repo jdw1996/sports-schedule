@@ -53,7 +53,7 @@ export const MLB_COLOURS = new Map<string, string[]>([
   ['LAD', [ROYAL, SKY, RED, NAVY]],
   ['MIA', [BLACK, SKY, TEAL, ORANGE, PINK, RED, YELLOW]],
   ['MIL', [NAVY, YELLOW, ROYAL, GOLD, GREEN]],
-  ['MIN', [NAVY, RED, GOLD, SKY]],
+  ['MIN', [NAVY, RED, ORANGE, SKY, GOLD]],
   ['NYM', [ROYAL, ORANGE, BLACK, PINK]],
   ['NYY', [NAVY, SILVER, GREY]],
   ['OAK', [GREEN, YELLOW]],

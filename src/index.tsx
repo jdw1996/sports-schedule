@@ -51,15 +51,16 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
 type FavouriteTeamCardProps = {
   teamName: string;
   colour: string;
+  numGames: number;
   removeTeam: () => void;
 };
 
 function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
-  const { teamName, colour, removeTeam } = props;
+  const { teamName, colour, numGames, removeTeam } = props;
 
   return (
     <div className={`favourite-team ${colour}`}>
-      <span>{teamName}</span>
+      <span>{`${teamName} (${numGames})`}</span>
       <button className="remove-button" onClick={removeTeam}>
         {REMOVE_SYMBOL}
       </button>
@@ -154,6 +155,29 @@ function App(): JSX.Element {
     setDays(generateCalendar(numDaysInMonth(month, year), new Date(year, month, 1).getDay()));
   }, [year, month]);
 
+  useEffect(() => {
+    const getGamesFor = async (favTeam: FavouriteTeam) => {
+      if (favTeam.games.length > 0) {
+        return;
+      }
+      const games = await getSchedule(favTeam.league, favTeam.teamCode);
+      setFavouriteTeams((oldFavouriteTeams) => {
+        const newFavouriteTeams = new Map(oldFavouriteTeams);
+        const teamId = getTeamId(favTeam.league, favTeam.teamCode);
+        const team = newFavouriteTeams.get(teamId);
+        if (team) {
+          const newTeam = { ...team };
+          newTeam.games = games;
+          newFavouriteTeams.set(teamId, newTeam);
+        }
+        return newFavouriteTeams;
+      });
+    };
+    favouriteTeams.forEach((favTeam) => {
+      getGamesFor(favTeam);
+    });
+  }, [favouriteTeams]);
+
   return (
     <div className="App">
       <h2>
@@ -195,6 +219,7 @@ function App(): JSX.Element {
           key={teamId}
           teamName={getTeamName(favTeam.league, favTeam.teamCode)}
           colour={favTeam.colour}
+          numGames={favTeam.games.length}
           removeTeam={() => {
             setFavouriteTeams((oldFavouriteTeams) => {
               const newFavouriteTeams = new Map(oldFavouriteTeams);
@@ -217,7 +242,7 @@ function App(): JSX.Element {
               league,
               teamCode,
               colour,
-              games: [], // TODO: Actually get games here.
+              games: [],
             });
             return newFavouriteTeams;
           });

@@ -23,11 +23,11 @@ function espnToNative(espn: ESPNGame, teamOfInterest: string): Game {
   return { opponentString, date: new Date(espn.date) };
 }
 
-export async function getSchedule(league: string, team: string): Promise<Game[]> {
+export async function getSchedule(league: string, teamCode: string): Promise<Game[]> {
   if (!URLS.has(league)) {
     throw new Error(`Given value ${league} is not a known league.`);
   }
-  const url = `${URLS.get(league)}${team}/schedule`;
+  const url = `${URLS.get(league)}${teamCode}/schedule`;
   const events: ESPNGame[] = (await (await fetch(url)).json()).events;
-  return events.map((espn) => espnToNative(espn, team));
+  return events.map((espn) => espnToNative(espn, teamCode));
 }

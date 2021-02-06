@@ -1,7 +1,6 @@
 body {
   width: 500px;
   margin: 0 auto;
-  font-family: 'Anonymous Pro', monospace;
   text-align: center;
 }
 
@@ -22,6 +21,7 @@ button {
   width: 100%;
   border: 1px solid black;
   text-align: center;
+  font-family: 'Anonymous Pro', monospace;
   font-size: small;
 }
 
@@ -37,6 +37,7 @@ button {
 .favourite-team,
 .new-team {
   margin: 2px 0;
+  padding: 2px;
 }
 
 .favourite-team > *,

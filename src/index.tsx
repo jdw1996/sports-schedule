@@ -8,8 +8,8 @@ import { Game } from './games';
 import './index.css';
 import { LEAGUES, TEAMS } from './teams';
 
-const ADD_SYMBOL = '+';
-const REMOVE_SYMBOL = '×';
+const ADD_SYMBOL = '➕';
+const REMOVE_SYMBOL = '✖️';
 
 type FavouriteTeam = {
   league: string;
@@ -18,7 +18,7 @@ type FavouriteTeam = {
   games: Game[];
 };
 
-function getFavouriteTeamId(league: string, teamCode: string): string {
+function getTeamId(league: string, teamCode: string): string {
   return `${league}${teamCode}`;
 }
 
@@ -60,6 +60,7 @@ function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
   return (
     <div className={`favourite-team ${colour}`}>
       <span>{teamName}</span>
+      <button onClick={removeTeam}>{REMOVE_SYMBOL}</button>
     </div>
   );
 }
@@ -176,14 +177,18 @@ function App(): JSX.Element {
           teamName={getTeamName(favTeam.league, favTeam.teamCode)}
           colour={favTeam.colour}
           removeTeam={() => {
-            console.log('foo');
+            setFavouriteTeams((oldFavouriteTeams) => {
+              const newFavouriteTeams = new Map(oldFavouriteTeams);
+              newFavouriteTeams.delete(getTeamId(favTeam.league, favTeam.teamCode));
+              return newFavouriteTeams;
+            });
           }}
         />
       ))}
       <TeamPicker
         addToFavourites={(league: string, teamCode: string, colour: string) => {
           setFavouriteTeams((oldFavouriteTeams) => {
-            const newFavouriteTeamKey = getFavouriteTeamId(league, teamCode);
+            const newFavouriteTeamKey = getTeamId(league, teamCode);
             if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
               return oldFavouriteTeams;
             }

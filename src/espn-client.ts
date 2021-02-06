@@ -14,13 +14,15 @@ type ESPNGame = {
 
 function espnToNative(espn: ESPNGame, teamOfInterest: string): Game {
   const [away, , home] = espn.shortName.split(' ');
-  let opponentString = '';
+  const date = new Date(espn.date);
+  const gameTime = `${('00' + date.getHours()).slice(-2)}${('00' + date.getMinutes()).slice(-2)}`;
+  let description = '';
   if (away === teamOfInterest) {
-    opponentString = `@${home}`;
+    description = `@${home}${gameTime}`;
   } else {
-    opponentString = `v${away}`;
+    description = `v${away}${gameTime}`;
   }
-  return { opponentString, date: new Date(espn.date) };
+  return { description, date };
 }
 
 export async function getSchedule(league: string, teamCode: string): Promise<Game[]> {

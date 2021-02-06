@@ -52,6 +52,11 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
   return (
     <div className="day" style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}>
       <span style={{ textAlign: 'center' }}>{day.date}</span>
+      {Array.from(day.games.entries()).map(([, game]) => (
+        <div className={`game ${game.colour}`} key={game.description}>
+          {game.description}
+        </div>
+      ))}
     </div>
   );
 }
@@ -185,6 +190,24 @@ function App(): JSX.Element {
       getGamesFor(favTeam);
     });
   }, [favouriteTeams]);
+
+  useEffect(() => {
+    favouriteTeams.forEach((favTeam) => {
+      setDays((oldDays) => {
+        const newDays = [...oldDays];
+        for (const game of favTeam.games) {
+          if (game.date.getFullYear() === year && game.date.getMonth() === month) {
+            const day = { ...newDays[game.date.getDate() - 1] };
+            const dayGames = new Map(day.games);
+            dayGames.set(game.description, { ...game, colour: favTeam.colour });
+            day.games = dayGames;
+            newDays[game.date.getDate() - 1] = day;
+          }
+        }
+        return newDays;
+      });
+    });
+  }, [year, month, favouriteTeams]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);

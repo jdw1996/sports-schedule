@@ -1,7 +1,10 @@
+import { Game } from './games';
+
 export type Day = {
   date: number;
   week: number;
   dayOfWeek: number;
+  games: Map<string, Game>;
 };
 
 const MONTHS = [
@@ -34,6 +37,7 @@ export function generateCalendar(numDays: number, firstDay: number): Day[] {
       date: i + 1,
       dayOfWeek: ((i + firstDay) % 7) + 1,
       week: Math.floor((i + firstDay) / 7) + 1,
+      games: new Map(),
     })),
   ];
 }

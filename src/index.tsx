@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import { COLOURS, DEFAULT_COLOUR, teamColour } from './colours';
+import { COLOURS, DEFAULT_COLOUR, getTeamColour } from './colours';
 import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
 import { getSchedule } from './espn-client';
 import { Game } from './games';
@@ -21,7 +21,7 @@ type FavouriteTeam = {
 };
 
 function getTeamId(league: string, teamCode: string): string {
-  return `${league}${teamCode}`;
+  return `${league}_${teamCode}`;
 }
 
 function getTeamName(league: string, teamCode: string): string {
@@ -71,10 +71,11 @@ function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
 
 type TeamPickerProps = {
   addToFavourites: (league: string, team: string, colour: string) => void;
+  usedColours: string[];
 };
 
 function TeamPicker(props: TeamPickerProps) {
-  const { addToFavourites } = props;
+  const { addToFavourites, usedColours } = props;
 
   const [pendingLeague, setPendingLeague] = useState(LEAGUES[0]);
   const [pendingTeam, setPendingTeam] = useState(defaultTeam(pendingLeague));
@@ -87,7 +88,7 @@ function TeamPicker(props: TeamPickerProps) {
   }, [pendingLeague]);
 
   useEffect(() => {
-    setColour(teamColour(pendingLeague, pendingTeam, []));
+    setColour(getTeamColour(pendingLeague, pendingTeam, usedColours));
   }, [pendingLeague, pendingTeam]);
 
   return (
@@ -217,6 +218,7 @@ function App(): JSX.Element {
         />
       ))}
       <TeamPicker
+        usedColours={Array.from(favouriteTeams.values()).map((favTeam) => favTeam.colour)}
         addToFavourites={(league: string, teamCode: string, colour: string) => {
           setFavouriteTeams((oldFavouriteTeams) => {
             const newFavouriteTeamKey = getTeamId(league, teamCode);

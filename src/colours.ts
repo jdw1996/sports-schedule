@@ -178,7 +178,7 @@ const TEAM_COLOURS = new Map<string, Map<string, string[]>>([
   ['NHL', NHL_COLOURS],
 ]);
 
-export function teamColour(league: string, team: string, usedColours: string[]): string {
+export function getTeamColour(league: string, team: string, usedColours: string[]): string {
   for (const colour of TEAM_COLOURS.get(league)?.get(team) ?? []) {
     if (!usedColours.includes(colour)) {
       return colour;

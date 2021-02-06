@@ -25,10 +25,21 @@ button {
   text-align: center;
 }
 
+.favourite-team {
+  text-align: left;
+  color: white;
+}
+
 .new-team {
   text-align: left;
 }
 
+.favourite-team,
+.new-team {
+  margin: 2px 0;
+}
+
+.favourite-team > *,
 .new-team > * {
   margin: 2px;
 }

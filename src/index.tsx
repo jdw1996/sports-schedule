@@ -8,8 +8,8 @@ import { Game } from './games';
 import './index.css';
 import { LEAGUES, TEAMS } from './teams';
 
-const ADD_SYMBOL = '➕';
-const REMOVE_SYMBOL = '✖️';
+const ADD_SYMBOL = '+';
+const REMOVE_SYMBOL = '×';
 
 type FavouriteTeam = {
   league: string;
@@ -18,8 +18,12 @@ type FavouriteTeam = {
   games: Game[];
 };
 
-function favouriteTeamId(fav: FavouriteTeam): string {
-  return `${fav.league}${fav.teamCode}`;
+function getFavouriteTeamId(league: string, teamCode: string): string {
+  return `${league}${teamCode}`;
+}
+
+function getTeamName(league: string, teamCode: string): string {
+  return TEAMS.get(league)?.[teamCode] ?? 'Team Not Found';
 }
 
 function defaultTeam(league: string): string {
@@ -40,6 +44,22 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
       <span style={{ textAlign: 'center' }}>{day.date}</span>
       <br />
       <span style={{ textAlign: 'center' }}>{day.games.length}</span>
+    </div>
+  );
+}
+
+type FavouriteTeamCardProps = {
+  teamName: string;
+  colour: string;
+  removeTeam: () => void;
+};
+
+function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
+  const { teamName, colour, removeTeam } = props;
+
+  return (
+    <div className={`favourite-team ${colour}`}>
+      <span>{teamName}</span>
     </div>
   );
 }
@@ -150,21 +170,30 @@ function App(): JSX.Element {
           <CalendarDay key={day.date} day={day} />
         ))}
       </div>
-      <span>{`You have ${favouriteTeams.size} favourite teams.`}</span>
+      {Array.from(favouriteTeams.entries()).map(([teamId, favTeam]: [string, FavouriteTeam]) => (
+        <FavouriteTeamCard
+          key={teamId}
+          teamName={getTeamName(favTeam.league, favTeam.teamCode)}
+          colour={favTeam.colour}
+          removeTeam={() => {
+            console.log('foo');
+          }}
+        />
+      ))}
       <TeamPicker
         addToFavourites={(league: string, teamCode: string, colour: string) => {
           setFavouriteTeams((oldFavouriteTeams) => {
-            const newFavouriteTeam = {
+            const newFavouriteTeamKey = getFavouriteTeamId(league, teamCode);
+            if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
+              return oldFavouriteTeams;
+            }
+            const newFavouriteTeams = new Map(oldFavouriteTeams);
+            newFavouriteTeams.set(newFavouriteTeamKey, {
               league,
               teamCode,
               colour,
               games: [], // TODO: Actually get games here.
-            };
-            const newFavouriteTeamKey = favouriteTeamId(newFavouriteTeam);
-            const newFavouriteTeams = new Map(oldFavouriteTeams);
-            if (!oldFavouriteTeams.has(newFavouriteTeamKey)) {
-              newFavouriteTeams.set(newFavouriteTeamKey, newFavouriteTeam);
-            }
+            });
             return newFavouriteTeams;
           });
         }}

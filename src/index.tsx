@@ -186,6 +186,43 @@ function App(): JSX.Element {
     });
   }, [favouriteTeams]);
 
+  const addToFavourites = (league: string, teamCode: string, colour: string) => {
+    const params = new URLSearchParams(window.location.search);
+    const oldParams = params.toString();
+    params.set(getTeamId(league, teamCode), colour);
+    const newParams = params.toString();
+    if (oldParams !== newParams) {
+      window.location.search = newParams;
+      return;
+    }
+    setFavouriteTeams((oldFavouriteTeams) => {
+      const newFavouriteTeamKey = getTeamId(league, teamCode);
+      if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
+        return oldFavouriteTeams;
+      }
+      const newFavouriteTeams = new Map(oldFavouriteTeams);
+      newFavouriteTeams.set(newFavouriteTeamKey, {
+        league,
+        teamCode,
+        colour: COLOURS.includes(colour) ? colour : DEFAULT_COLOUR,
+        games: [],
+      });
+      return newFavouriteTeams;
+    });
+  };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    params.forEach((colour, teamId) => {
+      try {
+        const [league, teamCode] = getLeagueAndTeamCode(teamId);
+        addToFavourites(league, teamCode, colour);
+      } catch {
+        return;
+      }
+    });
+  }, []);
+
   return (
     <div className="App">
       <h2>
@@ -239,22 +276,7 @@ function App(): JSX.Element {
       ))}
       <TeamPicker
         usedColours={Array.from(favouriteTeams.values()).map((favTeam) => favTeam.colour)}
-        addToFavourites={(league: string, teamCode: string, colour: string) => {
-          setFavouriteTeams((oldFavouriteTeams) => {
-            const newFavouriteTeamKey = getTeamId(league, teamCode);
-            if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
-              return oldFavouriteTeams;
-            }
-            const newFavouriteTeams = new Map(oldFavouriteTeams);
-            newFavouriteTeams.set(newFavouriteTeamKey, {
-              league,
-              teamCode,
-              colour,
-              games: [],
-            });
-            return newFavouriteTeams;
-          });
-        }}
+        addToFavourites={addToFavourites}
       />
     </div>
   );

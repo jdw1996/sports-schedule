@@ -44,8 +44,6 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
   return (
     <div className="day" style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}>
       <span style={{ textAlign: 'center' }}>{day.date}</span>
-      <br />
-      <span style={{ textAlign: 'center' }}>{day.games.length}</span>
     </div>
   );
 }
@@ -149,23 +147,12 @@ function App(): JSX.Element {
 
   const [month, setMonth] = useState(currentDate.getMonth());
   const [year, setYear] = useState(currentDate.getFullYear());
-  const [firstDay, setFirstDay] = useState(0);
-  const [daysInMonth, setDaysInMonth] = useState(0);
   const [days, setDays] = useState<Day[]>([]);
   const [favouriteTeams, setFavouriteTeams] = useState<Map<string, FavouriteTeam>>(new Map([]));
 
   useEffect(() => {
-    const newFirstDay = new Date(year, month, 1).getDay();
-    const newDaysInMonth = numDaysInMonth(month, year);
-    const newCalendar = generateCalendar(newDaysInMonth, newFirstDay);
-    setFirstDay(newFirstDay);
-    setDaysInMonth(newDaysInMonth);
-    setDays(newCalendar);
+    setDays(generateCalendar(numDaysInMonth(month, year), new Date(year, month, 1).getDay()));
   }, [year, month]);
-
-  useEffect(() => {
-    setDays(generateCalendar(daysInMonth, firstDay));
-  }, [daysInMonth, firstDay]);
 
   return (
     <div className="App">

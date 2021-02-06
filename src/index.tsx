@@ -24,6 +24,14 @@ function getTeamId(league: string, teamCode: string): string {
   return `${league}_${teamCode}`;
 }
 
+function getLeagueAndTeamCode(teamId: string): [string, string] {
+  const splitId = teamId.split('_');
+  if (splitId.length !== 2) {
+    throw new Error('Invalid team ID!');
+  }
+  return splitId as [string, string];
+}
+
 function getTeamName(league: string, teamCode: string): string {
   return TEAMS.get(league)?.[teamCode] ?? 'Team Not Found';
 }

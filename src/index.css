@@ -4,8 +4,14 @@ body {
   text-align: center;
 }
 
-button {
+.next-button,
+.remove-button,
+.add-button {
   float: right;
+}
+
+.previous-button {
+  float: left;
 }
 
 .grid-container {

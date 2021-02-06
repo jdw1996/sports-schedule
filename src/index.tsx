@@ -10,6 +10,8 @@ import { LEAGUES, TEAMS } from './teams';
 
 const ADD_SYMBOL = '➕';
 const REMOVE_SYMBOL = '✖️';
+const PREVIOUS_SYMBOL = '⬅️';
+const NEXT_SYMBOL = '➡️';
 
 type FavouriteTeam = {
   league: string;
@@ -60,7 +62,9 @@ function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
   return (
     <div className={`favourite-team ${colour}`}>
       <span>{teamName}</span>
-      <button onClick={removeTeam}>{REMOVE_SYMBOL}</button>
+      <button className="remove-button" onClick={removeTeam}>
+        {REMOVE_SYMBOL}
+      </button>
     </div>
   );
 }
@@ -128,6 +132,7 @@ function TeamPicker(props: TeamPickerProps) {
         ))}
       </select>
       <button
+        className="remove-button"
         onClick={() => {
           addToFavourites(pendingLeague, pendingTeam, colour);
         }}
@@ -164,7 +169,33 @@ function App(): JSX.Element {
   return (
     <div className="App">
       <h2>
+        <button
+          className="previous-button"
+          onClick={() => {
+            let newMonth = month - 1;
+            if (newMonth < 0) {
+              setYear((oldYear) => oldYear - 1);
+              newMonth += 12;
+            }
+            setMonth(newMonth);
+          }}
+        >
+          {PREVIOUS_SYMBOL}
+        </button>
         {monthName(month)} {year}
+        <button
+          className="next-button"
+          onClick={() => {
+            let newMonth = month + 1;
+            if (newMonth > 11) {
+              setYear((oldYear) => oldYear + 1);
+              newMonth %= 12;
+            }
+            setMonth(newMonth);
+          }}
+        >
+          {NEXT_SYMBOL}
+        </button>
       </h2>
       <div className="grid-container">
         {days.map((day: Day) => (

@@ -64,16 +64,15 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
 type FavouriteTeamCardProps = {
   teamName: string;
   colour: string;
-  numGames: number;
   removeFromFavourites: () => void;
 };
 
 function FavouriteTeamCard(props: FavouriteTeamCardProps): JSX.Element {
-  const { teamName, colour, numGames, removeFromFavourites } = props;
+  const { teamName, colour, removeFromFavourites } = props;
 
   return (
     <div className={`favourite-team ${colour}`}>
-      <span>{`${teamName} (${numGames})`}</span>
+      <span>{teamName}</span>
       <button className="remove-button" onClick={removeFromFavourites}>
         {REMOVE_SYMBOL}
       </button>
@@ -163,33 +162,11 @@ function App(): JSX.Element {
   const [year, setYear] = useState(currentDate.getFullYear());
   const [days, setDays] = useState<Day[]>([]);
   const [favouriteTeams, setFavouriteTeams] = useState<Map<string, FavouriteTeam>>(new Map([]));
+  const [pendingFavouriteTeams, setPendingFavouriteTeams] = useState(new URLSearchParams());
 
   useEffect(() => {
     setDays(generateCalendar(numDaysInMonth(month, year), new Date(year, month, 1).getDay()));
   }, [year, month]);
-
-  useEffect(() => {
-    const getGamesFor = async (favTeam: FavouriteTeam) => {
-      if (favTeam.games.length > 0) {
-        return;
-      }
-      const games = await getSchedule(favTeam.league, favTeam.teamCode);
-      setFavouriteTeams((oldFavouriteTeams) => {
-        const newFavouriteTeams = new Map(oldFavouriteTeams);
-        const teamId = getTeamId(favTeam.league, favTeam.teamCode);
-        const team = newFavouriteTeams.get(teamId);
-        if (team) {
-          const newTeam = { ...team };
-          newTeam.games = games;
-          newFavouriteTeams.set(teamId, newTeam);
-        }
-        return newFavouriteTeams;
-      });
-    };
-    favouriteTeams.forEach((favTeam) => {
-      getGamesFor(favTeam);
-    });
-  }, [favouriteTeams]);
 
   useEffect(() => {
     favouriteTeams.forEach((favTeam) => {
@@ -211,9 +188,11 @@ function App(): JSX.Element {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    params.forEach((colour, teamId) => {
+    setPendingFavouriteTeams(params);
+    params.forEach(async (colour, teamId) => {
       try {
         const [league, teamCode] = getLeagueAndTeamCode(teamId);
+        const games = await getSchedule(league, teamCode);
         setFavouriteTeams((oldFavouriteTeams) => {
           const newFavouriteTeamKey = getTeamId(league, teamCode);
           if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
@@ -224,7 +203,7 @@ function App(): JSX.Element {
             league,
             teamCode,
             colour: COLOURS.includes(colour) ? colour : DEFAULT_COLOUR,
-            games: [],
+            games,
           });
           return newFavouriteTeams;
         });
@@ -235,23 +214,23 @@ function App(): JSX.Element {
   }, []);
 
   const addToFavourites = (league: string, teamCode: string, colour: string) => {
-    const params = new URLSearchParams(window.location.search);
-    const oldParams = params.toString();
-    params.set(getTeamId(league, teamCode), colour);
-    const newParams = params.toString();
-    if (oldParams !== newParams) {
-      window.location.search = newParams;
-    }
+    setPendingFavouriteTeams((oldTeams) => {
+      const newTeams = new URLSearchParams(oldTeams);
+      newTeams.set(getTeamId(league, teamCode), colour);
+      return newTeams;
+    });
   };
 
   const removeFromFavourites = (league: string, teamCode: string) => {
-    const params = new URLSearchParams(window.location.search);
-    const oldParams = params.toString();
-    params.delete(getTeamId(league, teamCode));
-    const newParams = params.toString();
-    if (oldParams !== newParams) {
-      window.location.search = newParams;
-    }
+    setPendingFavouriteTeams((oldTeams) => {
+      const newTeams = new URLSearchParams(oldTeams);
+      newTeams.delete(getTeamId(league, teamCode));
+      return newTeams;
+    });
+  };
+
+  const applyChanges = () => {
+    window.location.search = pendingFavouriteTeams.toString();
   };
 
   return (
@@ -290,21 +269,21 @@ function App(): JSX.Element {
           <CalendarDay key={day.date} day={day} />
         ))}
       </div>
-      {Array.from(favouriteTeams.entries()).map(([teamId, favTeam]: [string, FavouriteTeam]) => (
+      {Array.from(pendingFavouriteTeams.entries()).map(([teamId, colour]) => (
         <FavouriteTeamCard
           key={teamId}
-          teamName={getTeamName(favTeam.league, favTeam.teamCode)}
-          colour={favTeam.colour}
-          numGames={favTeam.games.length}
+          teamName={getTeamName(...getLeagueAndTeamCode(teamId))}
+          colour={colour}
           removeFromFavourites={() => {
-            removeFromFavourites(favTeam.league, favTeam.teamCode);
+            removeFromFavourites(...getLeagueAndTeamCode(teamId));
           }}
         />
       ))}
       <TeamPicker
-        usedColours={Array.from(favouriteTeams.values()).map((favTeam) => favTeam.colour)}
+        usedColours={Array.from(pendingFavouriteTeams.values()).map((colour) => colour)}
         addToFavourites={addToFavourites}
       />
+      <button onClick={applyChanges}>Apply Changes</button>
     </div>
   );
 }

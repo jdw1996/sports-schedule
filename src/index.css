@@ -46,6 +46,7 @@ button {
 .new-team {
   margin: 2px 0;
   padding: 2px;
+  overflow: auto;
 }
 
 .favourite-team > *,

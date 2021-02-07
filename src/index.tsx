@@ -10,8 +10,8 @@ import { LEAGUES, TEAMS } from './teams';
 
 const ADD_SYMBOL = '➕';
 const REMOVE_SYMBOL = '✖️';
-const PREVIOUS_SYMBOL = '⬅️';
-const NEXT_SYMBOL = '➡️';
+const PREVIOUS_SYMBOL = '←';
+const NEXT_SYMBOL = '→️';
 
 type FavouriteTeam = {
   league: string;

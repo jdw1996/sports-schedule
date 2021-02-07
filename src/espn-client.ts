@@ -1,10 +1,10 @@
 import { Game } from './games';
 
 const URLS: Map<string, string> = new Map([
-  ['MLB', 'http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/'],
-  ['NBA', 'http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'],
-  ['NFL', 'http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/'],
-  ['NHL', 'http://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams/'],
+  ['MLB', 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/'],
+  ['NBA', 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'],
+  ['NFL', 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/'],
+  ['NHL', 'https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams/'],
 ]);
 
 type ESPNGame = {

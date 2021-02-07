@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sports-schedule/static/css/main.a6c69d6b.chunk.css",
+    "main.css": "/sports-schedule/static/css/main.e59364af.chunk.css",
     "main.js": "/sports-schedule/static/js/main.5b31a7b2.chunk.js",
     "main.js.map": "/sports-schedule/static/js/main.5b31a7b2.chunk.js.map",
     "runtime-main.js": "/sports-schedule/static/js/runtime-main.900dc448.js",
@@ -8,13 +8,13 @@
     "static/js/2.ff318675.chunk.js": "/sports-schedule/static/js/2.ff318675.chunk.js",
     "static/js/2.ff318675.chunk.js.map": "/sports-schedule/static/js/2.ff318675.chunk.js.map",
     "index.html": "/sports-schedule/index.html",
-    "static/css/main.a6c69d6b.chunk.css.map": "/sports-schedule/static/css/main.a6c69d6b.chunk.css.map",
+    "static/css/main.e59364af.chunk.css.map": "/sports-schedule/static/css/main.e59364af.chunk.css.map",
     "static/js/2.ff318675.chunk.js.LICENSE.txt": "/sports-schedule/static/js/2.ff318675.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.900dc448.js",
     "static/js/2.ff318675.chunk.js",
-    "static/css/main.a6c69d6b.chunk.css",
+    "static/css/main.e59364af.chunk.css",
     "static/js/main.5b31a7b2.chunk.js"
   ]
 }

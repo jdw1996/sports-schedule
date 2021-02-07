@@ -52,11 +52,13 @@ function CalendarDay(props: CalendarDayProps): JSX.Element {
   return (
     <div className="day" style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}>
       <span style={{ textAlign: 'center' }}>{day.date}</span>
-      {Array.from(day.games.entries()).map(([, game]) => (
-        <div className={`game ${game.colour}`} key={game.description}>
-          {game.description}
-        </div>
-      ))}
+      {Array.from(day.games.entries())
+        .sort(([, game1], [, game2]) => game1.timeString.localeCompare(game2.timeString))
+        .map(([, game]) => (
+          <div className={`game ${game.colour}`} key={game.description}>
+            {game.description}
+          </div>
+        ))}
     </div>
   );
 }

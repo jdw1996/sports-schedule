@@ -193,15 +193,14 @@ function App(): JSX.Element {
     setPendingFavouriteTeams(params);
     params.forEach(async (colour, teamId) => {
       try {
+        if (favouriteTeams.has(teamId)) {
+          return;
+        }
         const [league, teamCode] = getLeagueAndTeamCode(teamId);
         const games = await getSchedule(league, teamCode);
         setFavouriteTeams((oldFavouriteTeams) => {
-          const newFavouriteTeamKey = getTeamId(league, teamCode);
-          if (oldFavouriteTeams.has(newFavouriteTeamKey)) {
-            return oldFavouriteTeams;
-          }
           const newFavouriteTeams = new Map(oldFavouriteTeams);
-          newFavouriteTeams.set(newFavouriteTeamKey, {
+          newFavouriteTeams.set(teamId, {
             league,
             teamCode,
             colour: COLOURS.includes(colour) ? colour : DEFAULT_COLOUR,
@@ -271,16 +270,19 @@ function App(): JSX.Element {
           <CalendarDay key={day.date} day={day} />
         ))}
       </div>
-      {Array.from(pendingFavouriteTeams.entries()).map(([teamId, colour]) => (
-        <FavouriteTeamCard
-          key={teamId}
-          teamName={getTeamName(...getLeagueAndTeamCode(teamId))}
-          colour={colour}
-          removeFromFavourites={() => {
-            removeFromFavourites(...getLeagueAndTeamCode(teamId));
-          }}
-        />
-      ))}
+      {Array.from(pendingFavouriteTeams.entries()).map(([teamId, colour]) => {
+        const [league, teamCode] = getLeagueAndTeamCode(teamId);
+        return (
+          <FavouriteTeamCard
+            key={teamId}
+            teamName={getTeamName(league, teamCode)}
+            colour={colour}
+            removeFromFavourites={() => {
+              removeFromFavourites(league, teamCode);
+            }}
+          />
+        );
+      })}
       <TeamPicker
         usedColours={Array.from(pendingFavouriteTeams.values()).map((colour) => colour)}
         addToFavourites={addToFavourites}

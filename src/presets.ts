@@ -15,7 +15,7 @@ export const presets: [string, string][] = [
   ['Kansas City', '?MLB_KC=Royal&NFL_KC=Red'],
   ['Las Vegas', '?NFL_LV=Black&NHL_VGS=Gold'],
   ['Los Angeles', '?MLB_LAD=Royal&NBA_LAC=Red&NBA_LAL=Purple&NFL_LAC=Sky&NFL_LAR=Yellow&NHL_LA=Black'],
-  ['Miami', '?MLB_MIA=Sky&NBA_MIA=Black&NFL_MIA=Teal&NHL_FLA=Red'],
+  ['Miami', '?MLB_MIA=Black&NBA_MIA=Pink&NFL_MIA=Teal&NHL_FLA=Red'],
   ['Minneapolis-Saint Paul', '?MLB_MIN=Red&NBA_MIN=Navy&NFL_MIN=Purple&NHL_MIN=Green'],
   ['New Orleans', '?NBA_NO=Navy&NFL_NO=Gold'],
   [

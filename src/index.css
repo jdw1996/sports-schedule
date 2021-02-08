@@ -8,6 +8,10 @@ button {
   display: inline-block;
 }
 
+p {
+  text-align: left;
+}
+
 .next-button,
 .remove-button,
 .add-button {

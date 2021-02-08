@@ -6,6 +6,7 @@ import { Day, monthName, numDaysInMonth, generateCalendar } from './date-utils';
 import { getSchedule } from './espn-client';
 import { Game } from './games';
 import './index.css';
+import { presets } from './presets';
 import { LEAGUES, TEAMS } from './teams';
 
 const ADD_SYMBOL = '➕';
@@ -126,11 +127,13 @@ function TeamPicker(props: TeamPickerProps) {
         }}
         value={pendingTeam}
       >
-        {Object.entries(TEAMS.get(pendingLeague) ?? {}).map(([teamCode, teamName]) => (
-          <option key={teamCode} value={teamCode}>
-            {teamName}
-          </option>
-        ))}
+        {Object.entries(TEAMS.get(pendingLeague) ?? {})
+          .sort(([, teamName1], [, teamName2]) => teamName1.localeCompare(teamName2))
+          .map(([teamCode, teamName]) => (
+            <option key={teamCode} value={teamCode}>
+              {teamName}
+            </option>
+          ))}
       </select>
       <select
         className="colour-select"
@@ -295,6 +298,27 @@ function App(): JSX.Element {
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <p>
+      All schedule data comes from the{' '}
+      <a href="https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b">ESPN API</a>. I have no affiliation
+      with ESPN or any professional sports league, and I cannot attest to the accuracy of the data.
+    </p>
+    <p>
+      You can select your own favourite teams in the tool above, but I&apos;ve also prepared some presets based on
+      likely combinations of favourite teams. My own configuration is available{' '}
+      <a href="/sports-schedule?MLB_TOR=Royal&NHL_TOR=Navy&NBA_TOR=Purple&MLB_NYM=Orange&NFL_BUF=Red">here</a> and here
+      are some for various regions with multiple teams:{' '}
+      {presets.map(([location, query], idx) => (
+        <>
+          {idx === 0 || <span>, </span>}
+          <a key={location} href={`/sports-schedule${query}`}>
+            {location}
+          </a>
+        </>
+      ))}
+      . For areas with multiple teams in the same league, I realize most fans likely cheer for one or the other, but
+      starting with a link to all of them should make it easier to customize.
+    </p>
   </React.StrictMode>,
   document.getElementById('root'),
 );

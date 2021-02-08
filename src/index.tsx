@@ -46,17 +46,21 @@ function defaultTeam(league: string): string {
 
 type CalendarDayProps = {
   day: Day;
+  isToday: boolean;
 };
 
 function CalendarDay(props: CalendarDayProps): JSX.Element {
-  const { day } = props;
+  const { day, isToday } = props;
   return (
-    <div className="day" style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}>
+    <div
+      className={`day ${isToday ? 'today' : ''}`}
+      style={{ gridArea: `${day.week + 1} / ${day.dayOfWeek} / span 1 / span 1` }}
+    >
       <span style={{ textAlign: 'center' }}>{day.date}</span>
       {Array.from(day.games.entries())
         .sort(([, game1], [, game2]) => game1.timeString.localeCompare(game2.timeString))
         .map(([, game]) => (
-          <div className={`game ${game.colour}`} key={game.description}>
+          <div className={`game ${isToday ? 'i' : ''}${game.colour}`} key={game.description}>
             {game.description}
           </div>
         ))}
@@ -270,7 +274,7 @@ function App(): JSX.Element {
       </h2>
       <div className="grid-container">
         {days.map((day: Day) => (
-          <CalendarDay key={day.date} day={day} />
+          <CalendarDay key={day.date} day={day} isToday={currentDate.getDate() === day.date} />
         ))}
       </div>
       {Array.from(pendingFavouriteTeams.entries()).map(([teamId, colour]) => {

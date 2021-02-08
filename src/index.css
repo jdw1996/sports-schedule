@@ -1,3 +1,23 @@
+:root {
+  --Red: #df0606;
+  --Brick: #910808;
+  --Brown: #613a05;
+  --Orange: #f96a20;
+  --Yellow: #f9cb06;
+  --Gold: #bfa740;
+  --Green: #248e0b;
+  --Teal: #16999d;
+  --Sky: #20c0f9;
+  --Royal: #2039df;
+  --Navy: #211b7e;
+  --Purple: #6f0fbd;
+  --Pink: #f25ae9;
+  --Black: #000000;
+  --Silver: #a6a6a6;
+  --Grey: #4d4d4d;
+  --White: #fff;
+}
+
 body {
   max-width: 700px;
   margin: 0 auto;
@@ -38,6 +58,12 @@ p {
   font-size: min(1rem, 2.5vw);
 }
 
+.today {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
 .favourite-team {
   text-align: left;
   color: white;
@@ -68,50 +94,115 @@ p {
 /* Colours */
 
 .Red {
-  background-color: #df0606;
+  background-color: var(--Red);
 }
 .Brick {
-  background-color: #910808;
+  background-color: var(--Brick);
 }
 .Brown {
-  background-color: #613a05;
+  background-color: var(--Brown);
 }
 .Orange {
-  background-color: #f96a20;
+  background-color: var(--Orange);
 }
 .Yellow {
-  background-color: #f9cb06;
+  background-color: var(--Yellow);
 }
 .Gold {
-  background-color: #bfa740;
+  background-color: var(--Gold);
 }
 .Green {
-  background-color: #248e0b;
+  background-color: var(--Green);
 }
 .Teal {
-  background-color: #16999d;
+  background-color: var(--Teal);
 }
 .Sky {
-  background-color: #20c0f9;
+  background-color: var(--Sky);
 }
 .Royal {
-  background-color: #2039df;
+  background-color: var(--Royal);
 }
 .Navy {
-  background-color: #211b7e;
+  background-color: var(--Navy);
 }
 .Purple {
-  background-color: #6f0fbd;
+  background-color: var(--Purple);
 }
 .Pink {
-  background-color: #f25ae9;
+  background-color: var(--Pink);
 }
 .Black {
-  background-color: #000000;
+  background-color: var(--Black);
 }
 .Silver {
-  background-color: #a6a6a6;
+  background-color: var(--Silver);
 }
 .Grey {
-  background-color: #4d4d4d;
+  background-color: var(--Grey);
+}
+
+.iRed {
+  color: var(--Red);
+  background-color: var(--White);
+}
+.iBrick {
+  color: var(--Brick);
+  background-color: var(--White);
+}
+.iBrown {
+  color: var(--Brown);
+  background-color: var(--White);
+}
+.iOrange {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+.iYellow {
+  color: var(--Yellow);
+  background-color: var(--White);
+}
+.iGold {
+  color: var(--Gold);
+  background-color: var(--White);
+}
+.iGreen {
+  color: var(--Green);
+  background-color: var(--White);
+}
+.iTeal {
+  color: var(--Teal);
+  background-color: var(--White);
+}
+.iSky {
+  color: var(--Sky);
+  background-color: var(--White);
+}
+.iRoyal {
+  color: var(--Royal);
+  background-color: var(--White);
+}
+.iNavy {
+  color: var(--Navy);
+  background-color: var(--White);
+}
+.iPurple {
+  color: var(--Purple);
+  background-color: var(--White);
+}
+.iPink {
+  color: var(--Pink);
+  background-color: var(--White);
+}
+.iBlack {
+  color: var(--Black);
+  background-color: var(--White);
+}
+.iSilver {
+  color: var(--Silver);
+  background-color: var(--White);
+}
+.iGrey {
+  color: var(--Grey);
+  background-color: var(--White);
 }

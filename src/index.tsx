@@ -274,7 +274,15 @@ function App(): JSX.Element {
       </h2>
       <div className="grid-container">
         {days.map((day: Day) => (
-          <CalendarDay key={day.date} day={day} isToday={currentDate.getDate() === day.date} />
+          <CalendarDay
+            key={day.date}
+            day={day}
+            isToday={
+              currentDate.getDate() === day.date &&
+              currentDate.getMonth() === month &&
+              currentDate.getFullYear() === year
+            }
+          />
         ))}
       </div>
       {Array.from(pendingFavouriteTeams.entries()).map(([teamId, colour]) => {

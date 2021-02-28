@@ -313,7 +313,7 @@ ReactDOM.render(
     <p>
       All schedule data comes from the{' '}
       <a href="https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b">ESPN API</a>. I have no affiliation
-      with ESPN or any professional sports league, and I cannot attest to the accuracy of the data.
+      with ESPN or any professional sports organization, and I cannot attest to the accuracy of the data.
     </p>
     <p>
       You can select your own favourite teams in the tool above, but I&apos;ve also prepared some presets based on
